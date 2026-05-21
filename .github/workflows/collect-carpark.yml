@@ -1,0 +1,53 @@
+name: Collect HDB Carpark Snapshot
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Singapore 08:00 = UTC 00:00
+    - cron: "7 0 * * *"
+
+    # Singapore 12:00 = UTC 04:00
+    - cron: "7 4 * * *"
+
+    # Singapore 18:00 = UTC 10:00
+    - cron: "7 10 * * *"
+
+    # Singapore 22:00 = UTC 14:00
+    - cron: "7 14 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run carpark collector
+        run: python collect_carpark_snapshot.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add data/ outputs/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add carpark snapshot"
+            git push
+          fi
