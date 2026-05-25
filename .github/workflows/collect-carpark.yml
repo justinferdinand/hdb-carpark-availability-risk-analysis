@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Singapore 08:17 = UTC 00:17
-    - cron: "17 0 * * *"
+    # Singapore 08:47 = UTC 00:17
+    - cron: "47 0 * * *"
   
     # Singapore 12:23 = UTC 04:23
     - cron: "23 4 * * *"
