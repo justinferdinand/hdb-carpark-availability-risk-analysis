@@ -1,0 +1,3022 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9a6106693ebf6d4e1a40e4bb9f45bc3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d9a6106693ebf6d4e1a40e4bb9f45bc3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d9a6106693ebf6d4e1a40e4bb9f45bc3 = L.map(
+                "map_d9a6106693ebf6d4e1a40e4bb9f45bc3",
+                {
+                    center: [1.3521, 103.8198],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6dc6e05925cb6e4d2d4bedf2ab70c04a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6dc6e05925cb6e4d2d4bedf2ab70c04a.addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+            var circle_marker_fdc8b2a0713dcfef8b392d7adfe91733 = L.circleMarker(
+                [1.2877077662690246, 103.81152776946885],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9f6ca9b86cb5870bdd26cb2595360cbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21171f67c8e0bb2ee1fe249e27874f98 = $(`<div id="html_21171f67c8e0bb2ee1fe249e27874f98" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BM3<br>         <b>Address:</b> BLK 49/50 HOY FATT ROAD<br>         <b>Total Lots:</b> 5<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9f6ca9b86cb5870bdd26cb2595360cbc.setContent(html_21171f67c8e0bb2ee1fe249e27874f98);
+            
+        
+
+        circle_marker_fdc8b2a0713dcfef8b392d7adfe91733.bindPopup(popup_9f6ca9b86cb5870bdd26cb2595360cbc)
+        ;
+
+        
+    
+    
+            var circle_marker_9981915e4d579cdfc5e803a3d13404e8 = L.circleMarker(
+                [1.3736487904344863, 103.88632970593174],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_82ceab611ff5368faaca785ecefbdff9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a9e45dc5752c75a1d65e0636355b0dc = $(`<div id="html_2a9e45dc5752c75a1d65e0636355b0dc" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> HG44<br>         <b>Address:</b> BLK 681-684 HOUGANG AVENUE 4/8<br>         <b>Total Lots:</b> 155<br>         <b>Lots Available:</b> 12<br>         <b>Availability Rate:</b> 7.7%<br>         <b>Parking Pressure:</b> 92.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_82ceab611ff5368faaca785ecefbdff9.setContent(html_2a9e45dc5752c75a1d65e0636355b0dc);
+            
+        
+
+        circle_marker_9981915e4d579cdfc5e803a3d13404e8.bindPopup(popup_82ceab611ff5368faaca785ecefbdff9)
+        ;
+
+        
+    
+    
+            var circle_marker_868c03c73b5a2964ea2f1a5fd948dcb0 = L.circleMarker(
+                [1.3057837826214542, 103.85679325981934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9b3ac681724bbc1c243b7d6f72f9087a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d969d3f5192f9710f502ada37611ca52 = $(`<div id="html_d969d3f5192f9710f502ada37611ca52" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CR29<br>         <b>Address:</b> BLK 29/30 KELANTAN LANE<br>         <b>Total Lots:</b> 72<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 5.6%<br>         <b>Parking Pressure:</b> 94.4%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9b3ac681724bbc1c243b7d6f72f9087a.setContent(html_d969d3f5192f9710f502ada37611ca52);
+            
+        
+
+        circle_marker_868c03c73b5a2964ea2f1a5fd948dcb0.bindPopup(popup_9b3ac681724bbc1c243b7d6f72f9087a)
+        ;
+
+        
+    
+    
+            var circle_marker_5420bec9291cbe9b8f8970ffff021861 = L.circleMarker(
+                [1.3348926471145106, 103.73931109135069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_4d034a58e95987c9ed48b09807df9f59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96ffafcf2a7809f4ae6f6fb9d78fb0ae = $(`<div id="html_96ffafcf2a7809f4ae6f6fb9d78fb0ae" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> J56<br>         <b>Address:</b> BLK 130 JURONG GATEWAY ROAD<br>         <b>Total Lots:</b> 15<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 6.7%<br>         <b>Parking Pressure:</b> 93.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_4d034a58e95987c9ed48b09807df9f59.setContent(html_96ffafcf2a7809f4ae6f6fb9d78fb0ae);
+            
+        
+
+        circle_marker_5420bec9291cbe9b8f8970ffff021861.bindPopup(popup_4d034a58e95987c9ed48b09807df9f59)
+        ;
+
+        
+    
+    
+            var circle_marker_940d8ff8cd20a4512f15dfebbf52c09a = L.circleMarker(
+                [1.3138577294992604, 103.76389656958308],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_e37ed385fea81c6e1f4a7336b952151d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a961731f7277275b783b2cbc9b758ed = $(`<div id="html_5a961731f7277275b783b2cbc9b758ed" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> C17<br>         <b>Address:</b> BLK 442-444,442A CLEMENTI AVENUE 3<br>         <b>Total Lots:</b> 46<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_e37ed385fea81c6e1f4a7336b952151d.setContent(html_5a961731f7277275b783b2cbc9b758ed);
+            
+        
+
+        circle_marker_940d8ff8cd20a4512f15dfebbf52c09a.bindPopup(popup_e37ed385fea81c6e1f4a7336b952151d)
+        ;
+
+        
+    
+    
+            var circle_marker_8e5b28f1ab4370093ac4e3b18e2a3636 = L.circleMarker(
+                [1.326509562382485, 103.88540075379076],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_a636d39c8a42f864898337c4be46a430 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4611e42d82d58a97ac23882ce8d3006c = $(`<div id="html_4611e42d82d58a97ac23882ce8d3006c" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> M36<br>         <b>Address:</b> BLK 43 CIRCUIT ROAD<br>         <b>Total Lots:</b> 16<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_a636d39c8a42f864898337c4be46a430.setContent(html_4611e42d82d58a97ac23882ce8d3006c);
+            
+        
+
+        circle_marker_8e5b28f1ab4370093ac4e3b18e2a3636.bindPopup(popup_a636d39c8a42f864898337c4be46a430)
+        ;
+
+        
+    
+    
+            var circle_marker_8f947e06764d0f67ef6b44b531bdc295 = L.circleMarker(
+                [1.3276774087929712, 103.8856050735695],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9ab9c27e5cd2b28197e9cc8aaa3885d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89033be0cf1ad3fa5357c42fb7897ec0 = $(`<div id="html_89033be0cf1ad3fa5357c42fb7897ec0" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> M37<br>         <b>Address:</b> BLK 38 TO 40 CIRCUIT ROAD<br>         <b>Total Lots:</b> 34<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 5.9%<br>         <b>Parking Pressure:</b> 94.1%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9ab9c27e5cd2b28197e9cc8aaa3885d3.setContent(html_89033be0cf1ad3fa5357c42fb7897ec0);
+            
+        
+
+        circle_marker_8f947e06764d0f67ef6b44b531bdc295.bindPopup(popup_9ab9c27e5cd2b28197e9cc8aaa3885d3)
+        ;
+
+        
+    
+    
+            var circle_marker_89ee15012fa3f6237dce8510d3eed1ed = L.circleMarker(
+                [1.3271530486482315, 103.88747666495222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_ebcfd1a1de5660c0e0e893862c021949 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c100266fa6fdb38ab06d1cf52713b88e = $(`<div id="html_c100266fa6fdb38ab06d1cf52713b88e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> M38<br>         <b>Address:</b> BLK 63 TO 64 CIRCUIT ROAD<br>         <b>Total Lots:</b> 100<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_ebcfd1a1de5660c0e0e893862c021949.setContent(html_c100266fa6fdb38ab06d1cf52713b88e);
+            
+        
+
+        circle_marker_89ee15012fa3f6237dce8510d3eed1ed.bindPopup(popup_ebcfd1a1de5660c0e0e893862c021949)
+        ;
+
+        
+    
+    
+            var circle_marker_74467701a4aff443df02ec23ba3019b0 = L.circleMarker(
+                [1.3347329118377305, 103.86611923734664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_6e107eef02600b70f9aab4b281adbca7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12776a6bfd4079f7a5b1fb450765e3d8 = $(`<div id="html_12776a6bfd4079f7a5b1fb450765e3d8" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PP4<br>         <b>Address:</b> BLK 121 TO 133 POTONG PASIR AVENUE 1<br>         <b>Total Lots:</b> 167<br>         <b>Lots Available:</b> 12<br>         <b>Availability Rate:</b> 7.2%<br>         <b>Parking Pressure:</b> 92.8%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_6e107eef02600b70f9aab4b281adbca7.setContent(html_12776a6bfd4079f7a5b1fb450765e3d8);
+            
+        
+
+        circle_marker_74467701a4aff443df02ec23ba3019b0.bindPopup(popup_6e107eef02600b70f9aab4b281adbca7)
+        ;
+
+        
+    
+    
+            var circle_marker_0c01ae9bb87d259b29ec63a854036ab6 = L.circleMarker(
+                [1.3358886108582313, 103.85240772188094],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_fac153ff7340ec5276214cc60a0effdf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed88ca3b17952c4245479150d8a5338b = $(`<div id="html_ed88ca3b17952c4245479150d8a5338b" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP14<br>         <b>Address:</b> BLK 63/64 LORONG 5 TOA PAYOH<br>         <b>Total Lots:</b> 51<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_fac153ff7340ec5276214cc60a0effdf.setContent(html_ed88ca3b17952c4245479150d8a5338b);
+            
+        
+
+        circle_marker_0c01ae9bb87d259b29ec63a854036ab6.bindPopup(popup_fac153ff7340ec5276214cc60a0effdf)
+        ;
+
+        
+    
+    
+            var circle_marker_7ded8198f72e4618d738a8f602feed9a = L.circleMarker(
+                [1.3361796317904415, 103.8482414982292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_b6a59d77e7f1a9930c637c72f4168ab4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd41d6238369a2ffb4354cb320b9244d = $(`<div id="html_fd41d6238369a2ffb4354cb320b9244d" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP2<br>         <b>Address:</b> BLK 85/A/B/C LORONG 4 TOA PAYOH<br>         <b>Total Lots:</b> 77<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 5.2%<br>         <b>Parking Pressure:</b> 94.8%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_b6a59d77e7f1a9930c637c72f4168ab4.setContent(html_fd41d6238369a2ffb4354cb320b9244d);
+            
+        
+
+        circle_marker_7ded8198f72e4618d738a8f602feed9a.bindPopup(popup_b6a59d77e7f1a9930c637c72f4168ab4)
+        ;
+
+        
+    
+    
+            var circle_marker_419e1552bd61a6b0662355cce3b173e4 = L.circleMarker(
+                [1.3894943709639047, 103.88638030369792],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8d1e55ba69c94d6b80b7c7bfaaa724a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8462d131071dfe3da8162e2ecf33ad4 = $(`<div id="html_d8462d131071dfe3da8162e2ecf33ad4" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> SK44<br>         <b>Address:</b> BLK 308 ANCHORVALE ROAD<br>         <b>Total Lots:</b> 418<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8d1e55ba69c94d6b80b7c7bfaaa724a2.setContent(html_d8462d131071dfe3da8162e2ecf33ad4);
+            
+        
+
+        circle_marker_419e1552bd61a6b0662355cce3b173e4.bindPopup(popup_8d1e55ba69c94d6b80b7c7bfaaa724a2)
+        ;
+
+        
+    
+    
+            var circle_marker_b3e09b0c1e677f38ef6b9190fbc6db19 = L.circleMarker(
+                [1.3904467559290847, 103.88840339805546],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_c12df642010cb0a6888f6f315cd2dc97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6137e97a6596ed90dd35a3aa217a705c = $(`<div id="html_6137e97a6596ed90dd35a3aa217a705c" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> SK40<br>         <b>Address:</b> BLK 306 ANCHORVALE LINK<br>         <b>Total Lots:</b> 514<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_c12df642010cb0a6888f6f315cd2dc97.setContent(html_6137e97a6596ed90dd35a3aa217a705c);
+            
+        
+
+        circle_marker_b3e09b0c1e677f38ef6b9190fbc6db19.bindPopup(popup_c12df642010cb0a6888f6f315cd2dc97)
+        ;
+
+        
+    
+    
+            var circle_marker_9ba92a31a073527dc2d6e4da79c65a73 = L.circleMarker(
+                [1.2797413916490037, 103.82614156083415],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_eea56e5106652ff97465cb790e90dd39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54e7a1652d570a5e571c1b40cb774ba4 = $(`<div id="html_54e7a1652d570a5e571c1b40cb774ba4" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TE3<br>         <b>Address:</b> BLK 108/110/112 JALAN BUKIT MERAH<br>         <b>Total Lots:</b> 19<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 5.3%<br>         <b>Parking Pressure:</b> 94.7%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_eea56e5106652ff97465cb790e90dd39.setContent(html_54e7a1652d570a5e571c1b40cb774ba4);
+            
+        
+
+        circle_marker_9ba92a31a073527dc2d6e4da79c65a73.bindPopup(popup_eea56e5106652ff97465cb790e90dd39)
+        ;
+
+        
+    
+    
+            var circle_marker_1b14ad497fabcda482d5d2d5bc6ec6a8 = L.circleMarker(
+                [1.2832343332565201, 103.81673344232469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_1994ca6bf31ae0951fa9b3027334ed6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6301a3cdccfe754b17a941677a270711 = $(`<div id="html_6301a3cdccfe754b17a941677a270711" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BM30<br>         <b>Address:</b> BLK 164/165 BUKIT MERAH CENTRAL<br>         <b>Total Lots:</b> 41<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_1994ca6bf31ae0951fa9b3027334ed6d.setContent(html_6301a3cdccfe754b17a941677a270711);
+            
+        
+
+        circle_marker_1b14ad497fabcda482d5d2d5bc6ec6a8.bindPopup(popup_1994ca6bf31ae0951fa9b3027334ed6d)
+        ;
+
+        
+    
+    
+            var circle_marker_9356307e3794b206afa266191372295e = L.circleMarker(
+                [1.3411010791516005, 103.84587103389002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_df724219abc3ac0b2cd3931670d5bf3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0d6ca8e2a40d6b689e7fe2b6ad6d34c = $(`<div id="html_a0d6ca8e2a40d6b689e7fe2b6ad6d34c" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP31<br>         <b>Address:</b> BLK 109/111 TO 115 LORONG 1 TOA PAYOH<br>         <b>Total Lots:</b> 50<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_df724219abc3ac0b2cd3931670d5bf3c.setContent(html_a0d6ca8e2a40d6b689e7fe2b6ad6d34c);
+            
+        
+
+        circle_marker_9356307e3794b206afa266191372295e.bindPopup(popup_df724219abc3ac0b2cd3931670d5bf3c)
+        ;
+
+        
+    
+    
+            var circle_marker_9dac11d57e7f8119c4cef7aecb38d2ee = L.circleMarker(
+                [1.3709897466881407, 103.84241897219825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8cd6cc9be44dfaa1f1a84fbccf74b796 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c030802272410c3975439fde0f646ee = $(`<div id="html_7c030802272410c3975439fde0f646ee" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> A30<br>         <b>Address:</b> BLK 129/134 ANG MO KIO STREET 12<br>         <b>Total Lots:</b> 13<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 7.7%<br>         <b>Parking Pressure:</b> 92.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8cd6cc9be44dfaa1f1a84fbccf74b796.setContent(html_7c030802272410c3975439fde0f646ee);
+            
+        
+
+        circle_marker_9dac11d57e7f8119c4cef7aecb38d2ee.bindPopup(popup_8cd6cc9be44dfaa1f1a84fbccf74b796)
+        ;
+
+        
+    
+    
+            var circle_marker_5d320ab1b3bb6b0051af1fab1733df90 = L.circleMarker(
+                [1.368074227174044, 103.94134824452101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_603879264f72732f47f322278b3da251 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8b92210ded4cf770cddcf5d55e13c70 = $(`<div id="html_e8b92210ded4cf770cddcf5d55e13c70" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> NT6L<br>         <b>Address:</b> BLK 647 TAMPINES STREET 62<br>         <b>Total Lots:</b> 6<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_603879264f72732f47f322278b3da251.setContent(html_e8b92210ded4cf770cddcf5d55e13c70);
+            
+        
+
+        circle_marker_5d320ab1b3bb6b0051af1fab1733df90.bindPopup(popup_603879264f72732f47f322278b3da251)
+        ;
+
+        
+    
+    
+            var circle_marker_d857d8ae305270e429b69ef5d634c77a = L.circleMarker(
+                [1.3797457123370553, 103.74411077646042],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_97093250e6c2b53ec2b36a7bc4ccbb36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bb59e67ef6b30bfa2fa37d4bc2c9e9d = $(`<div id="html_4bb59e67ef6b30bfa2fa37d4bc2c9e9d" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK29<br>         <b>Address:</b> BLK 276/277 CHOA CHU KANG AVENUE 2<br>         <b>Total Lots:</b> 25<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 4.0%<br>         <b>Parking Pressure:</b> 96.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_97093250e6c2b53ec2b36a7bc4ccbb36.setContent(html_4bb59e67ef6b30bfa2fa37d4bc2c9e9d);
+            
+        
+
+        circle_marker_d857d8ae305270e429b69ef5d634c77a.bindPopup(popup_97093250e6c2b53ec2b36a7bc4ccbb36)
+        ;
+
+        
+    
+    
+            var circle_marker_59cd30a046f91fbccfb060cde885cf92 = L.circleMarker(
+                [1.3822899983079187, 103.74374379564632],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_de4ef61acf8f13dce3262a790e599f72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_230a1111f25c0c75fecdf84e46713ecf = $(`<div id="html_230a1111f25c0c75fecdf84e46713ecf" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK25<br>         <b>Address:</b> BLK 352-355 CHOA CHU KANG CENTRAL<br>         <b>Total Lots:</b> 107<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_de4ef61acf8f13dce3262a790e599f72.setContent(html_230a1111f25c0c75fecdf84e46713ecf);
+            
+        
+
+        circle_marker_59cd30a046f91fbccfb060cde885cf92.bindPopup(popup_de4ef61acf8f13dce3262a790e599f72)
+        ;
+
+        
+    
+    
+            var circle_marker_6f05363135ea2dfd6ca54562a1e055f4 = L.circleMarker(
+                [1.383326163012076, 103.74330985413629],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_1741780711acdac845d2663493a2a9d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04355fe8e6379656581ce4cf98247a29 = $(`<div id="html_04355fe8e6379656581ce4cf98247a29" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK24<br>         <b>Address:</b> BLK 350-351 CHOA CHU KANG CENTRAL<br>         <b>Total Lots:</b> 34<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_1741780711acdac845d2663493a2a9d3.setContent(html_04355fe8e6379656581ce4cf98247a29);
+            
+        
+
+        circle_marker_6f05363135ea2dfd6ca54562a1e055f4.bindPopup(popup_1741780711acdac845d2663493a2a9d3)
+        ;
+
+        
+    
+    
+            var circle_marker_8007fe97ff70d0f1fda17f5bf175606d = L.circleMarker(
+                [1.3936125125577157, 103.8914760567713],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_87a2391e37780fa91151fa4538800041 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_504fd7ca660b7008a9ebb64a50f51a1f = $(`<div id="html_504fd7ca660b7008a9ebb64a50f51a1f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> SK51<br>         <b>Address:</b> BLK 325 SENGKANG EAST WAY<br>         <b>Total Lots:</b> 541<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_87a2391e37780fa91151fa4538800041.setContent(html_504fd7ca660b7008a9ebb64a50f51a1f);
+            
+        
+
+        circle_marker_8007fe97ff70d0f1fda17f5bf175606d.bindPopup(popup_87a2391e37780fa91151fa4538800041)
+        ;
+
+        
+    
+    
+            var circle_marker_03b7be879163a6381cb1791d8deb6c70 = L.circleMarker(
+                [1.2847190033879028, 103.82171169354837],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_515415a3fcd2034134cd74de9fda236f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d1880a45d1882733e6c67c3e526c796 = $(`<div id="html_8d1880a45d1882733e6c67c3e526c796" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> HE3<br>         <b>Address:</b> BLK 116/117 BUKIT MERAH VIEW<br>         <b>Total Lots:</b> 148<br>         <b>Lots Available:</b> 6<br>         <b>Availability Rate:</b> 4.1%<br>         <b>Parking Pressure:</b> 95.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_515415a3fcd2034134cd74de9fda236f.setContent(html_8d1880a45d1882733e6c67c3e526c796);
+            
+        
+
+        circle_marker_03b7be879163a6381cb1791d8deb6c70.bindPopup(popup_515415a3fcd2034134cd74de9fda236f)
+        ;
+
+        
+    
+    
+            var circle_marker_12b5b52d8aac7291cacdf470e5f07ba8 = L.circleMarker(
+                [1.277605691154847, 103.81934329580649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_010f56644f623d68d3354a3f6d945ed1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aceb7e1b3272d9dd4264b7c2dfb7e937 = $(`<div id="html_aceb7e1b3272d9dd4264b7c2dfb7e937" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TB2<br>         <b>Address:</b> BLK 8-10 TELOK BLANGAH CRESCENT<br>         <b>Total Lots:</b> 51<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_010f56644f623d68d3354a3f6d945ed1.setContent(html_aceb7e1b3272d9dd4264b7c2dfb7e937);
+            
+        
+
+        circle_marker_12b5b52d8aac7291cacdf470e5f07ba8.bindPopup(popup_010f56644f623d68d3354a3f6d945ed1)
+        ;
+
+        
+    
+    
+            var circle_marker_e823fcfa2bcbf218cdaec1558c19da74 = L.circleMarker(
+                [1.2872568479780304, 103.83897315415284],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_6d4bb3564121420d66e1dc89919f9006 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed3cc4d1c0d2a3e859b29c454f17fd80 = $(`<div id="html_ed3cc4d1c0d2a3e859b29c454f17fd80" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> JKM<br>         <b>Address:</b> BLK 8A JALAN KUKOH MSCP<br>         <b>Total Lots:</b> 360<br>         <b>Lots Available:</b> 30<br>         <b>Availability Rate:</b> 8.3%<br>         <b>Parking Pressure:</b> 91.7%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_6d4bb3564121420d66e1dc89919f9006.setContent(html_ed3cc4d1c0d2a3e859b29c454f17fd80);
+            
+        
+
+        circle_marker_e823fcfa2bcbf218cdaec1558c19da74.bindPopup(popup_6d4bb3564121420d66e1dc89919f9006)
+        ;
+
+        
+    
+    
+            var circle_marker_62f41efcd1d0d16393f837bd51fcf95b = L.circleMarker(
+                [1.3072843627095663, 103.78343964059528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_0dfdcb42dd6edb8eeacb0f4b5f4ab31d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e7b10393e0fab64a5d7b98c13a32e18 = $(`<div id="html_9e7b10393e0fab64a5d7b98c13a32e18" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> AR9<br>         <b>Address:</b> BLK 20/22/23 DOVER CRESCENT<br>         <b>Total Lots:</b> 64<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 6.2%<br>         <b>Parking Pressure:</b> 93.8%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_0dfdcb42dd6edb8eeacb0f4b5f4ab31d.setContent(html_9e7b10393e0fab64a5d7b98c13a32e18);
+            
+        
+
+        circle_marker_62f41efcd1d0d16393f837bd51fcf95b.bindPopup(popup_0dfdcb42dd6edb8eeacb0f4b5f4ab31d)
+        ;
+
+        
+    
+    
+            var circle_marker_e641d4922f81e6151a18387e1f5ffd92 = L.circleMarker(
+                [1.3491180938248541, 103.71858546676606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_afc61480f8d3d9430faa637cff2c89cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36ec6fc714709fa4f8210aeb8c234fdc = $(`<div id="html_36ec6fc714709fa4f8210aeb8c234fdc" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> J38<br>         <b>Address:</b> BLK 505/508 JURONG WEST STREET 52<br>         <b>Total Lots:</b> 27<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 7.4%<br>         <b>Parking Pressure:</b> 92.6%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_afc61480f8d3d9430faa637cff2c89cb.setContent(html_36ec6fc714709fa4f8210aeb8c234fdc);
+            
+        
+
+        circle_marker_e641d4922f81e6151a18387e1f5ffd92.bindPopup(popup_afc61480f8d3d9430faa637cff2c89cb)
+        ;
+
+        
+    
+    
+            var circle_marker_e9dc41f82e7626c9bbf25f392bce5689 = L.circleMarker(
+                [1.3217496873149626, 103.73934148022114],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_cb761d8ea16ca7e9a057caed3e4aa0d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_238167f7710b6441e59ea42d9d5092a4 = $(`<div id="html_238167f7710b6441e59ea42d9d5092a4" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TGML<br>         <b>Address:</b> BLK 64 AND 65 TEBAN GARDENS ROAD<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_cb761d8ea16ca7e9a057caed3e4aa0d1.setContent(html_238167f7710b6441e59ea42d9d5092a4);
+            
+        
+
+        circle_marker_e9dc41f82e7626c9bbf25f392bce5689.bindPopup(popup_cb761d8ea16ca7e9a057caed3e4aa0d1)
+        ;
+
+        
+    
+    
+            var circle_marker_c38d82b33ba8c4d1795117fdbb45b09f = L.circleMarker(
+                [1.3222422628168249, 103.77051277091007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_dab339209ff652ef0128a3183e9d6e0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f05deffd303a58ea8ff499cff44de925 = $(`<div id="html_f05deffd303a58ea8ff499cff44de925" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> C27<br>         <b>Address:</b> BLK 108/109 CLEMENTI STREET 11<br>         <b>Total Lots:</b> 16<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_dab339209ff652ef0128a3183e9d6e0b.setContent(html_f05deffd303a58ea8ff499cff44de925);
+            
+        
+
+        circle_marker_c38d82b33ba8c4d1795117fdbb45b09f.bindPopup(popup_dab339209ff652ef0128a3183e9d6e0b)
+        ;
+
+        
+    
+    
+            var circle_marker_eec46264d9b73dd483afcae680ced637 = L.circleMarker(
+                [1.2784436505669539, 103.81857405338022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8d5037ae0e47bca6c18b24aa402da8ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1234ca54d568e3b351f94de56c11edd0 = $(`<div id="html_1234ca54d568e3b351f94de56c11edd0" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TB1<br>         <b>Address:</b> BLK 1/2/3/4/6 TELOK BLANGAH CRESCENT<br>         <b>Total Lots:</b> 58<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8d5037ae0e47bca6c18b24aa402da8ed.setContent(html_1234ca54d568e3b351f94de56c11edd0);
+            
+        
+
+        circle_marker_eec46264d9b73dd483afcae680ced637.bindPopup(popup_8d5037ae0e47bca6c18b24aa402da8ed)
+        ;
+
+        
+    
+    
+            var circle_marker_804d104e1da7f5833f59f5c7308e6989 = L.circleMarker(
+                [1.276839182859871, 103.81946766823697],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_0cb8bab48f147aee44e9db20d1429b43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85c03ac6f72c8122e555a89aa6fe44c2 = $(`<div id="html_85c03ac6f72c8122e555a89aa6fe44c2" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TB3<br>         <b>Address:</b> BLK 12/22 TELOK BLANGAH CRESCENT<br>         <b>Total Lots:</b> 154<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_0cb8bab48f147aee44e9db20d1429b43.setContent(html_85c03ac6f72c8122e555a89aa6fe44c2);
+            
+        
+
+        circle_marker_804d104e1da7f5833f59f5c7308e6989.bindPopup(popup_0cb8bab48f147aee44e9db20d1429b43)
+        ;
+
+        
+    
+    
+            var circle_marker_22781b790dc21c2375f7f242fff3527f = L.circleMarker(
+                [1.2732889977607464, 103.82223343925538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_777d89a18e85523b1f424c2807ba45c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b5d7f620f26bab32d786a4faa2f2840 = $(`<div id="html_5b5d7f620f26bab32d786a4faa2f2840" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TB9<br>         <b>Address:</b> BLK 32/35 TELOK BLANGAH RISE<br>         <b>Total Lots:</b> 77<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_777d89a18e85523b1f424c2807ba45c5.setContent(html_5b5d7f620f26bab32d786a4faa2f2840);
+            
+        
+
+        circle_marker_22781b790dc21c2375f7f242fff3527f.bindPopup(popup_777d89a18e85523b1f424c2807ba45c5)
+        ;
+
+        
+    
+    
+            var circle_marker_1c66525eaa03f2557e5f632216e860ef = L.circleMarker(
+                [1.3223512364917547, 103.76898892209617],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_b6dd8b8da708829f758dc4cdebe499e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5147bb2f5564001cb39cdbb3109dbca9 = $(`<div id="html_5147bb2f5564001cb39cdbb3109dbca9" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> C25<br>         <b>Address:</b> BLK 101-104 CLEMENTI STREET 14<br>         <b>Total Lots:</b> 154<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_b6dd8b8da708829f758dc4cdebe499e2.setContent(html_5147bb2f5564001cb39cdbb3109dbca9);
+            
+        
+
+        circle_marker_1c66525eaa03f2557e5f632216e860ef.bindPopup(popup_b6dd8b8da708829f758dc4cdebe499e2)
+        ;
+
+        
+    
+    
+            var circle_marker_94f70e3ea1e53062b7879bb4d5dc0335 = L.circleMarker(
+                [1.3336909599995805, 103.87922883841398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_cccb5bab1ed77cd66dd1d23024cb3fb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed3b741140e9037de638804cd3219413 = $(`<div id="html_ed3b741140e9037de638804cd3219413" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> UA2<br>         <b>Address:</b> BLK 3 TO 5 UPPER ALJUNIED LANE<br>         <b>Total Lots:</b> 60<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 6.7%<br>         <b>Parking Pressure:</b> 93.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_cccb5bab1ed77cd66dd1d23024cb3fb8.setContent(html_ed3b741140e9037de638804cd3219413);
+            
+        
+
+        circle_marker_94f70e3ea1e53062b7879bb4d5dc0335.bindPopup(popup_cccb5bab1ed77cd66dd1d23024cb3fb8)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c5361f5835185bab7308781788cb68 = L.circleMarker(
+                [1.3497546144769716, 103.71787227953133],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_b9f29cc6385489c4650d9cda33d0ac39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3aa8fd506268b15d351e64b372d11274 = $(`<div id="html_3aa8fd506268b15d351e64b372d11274" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> J60L<br>         <b>Address:</b> BLK 505 JURONG WEST STREET 52<br>         <b>Total Lots:</b> 10<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_b9f29cc6385489c4650d9cda33d0ac39.setContent(html_3aa8fd506268b15d351e64b372d11274);
+            
+        
+
+        circle_marker_e0c5361f5835185bab7308781788cb68.bindPopup(popup_b9f29cc6385489c4650d9cda33d0ac39)
+        ;
+
+        
+    
+    
+            var circle_marker_87f21836307a0939c6cf810105373a5b = L.circleMarker(
+                [1.3462276475605943, 103.69417441757965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_e754ca46830459a8a4c7e83aecedf39a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4afe2777d00d476908f861cbad9bbbfd = $(`<div id="html_4afe2777d00d476908f861cbad9bbbfd" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> J71<br>         <b>Address:</b> BLK 812/826 JURONG WEST STREET 81<br>         <b>Total Lots:</b> 450<br>         <b>Lots Available:</b> 31<br>         <b>Availability Rate:</b> 6.9%<br>         <b>Parking Pressure:</b> 93.1%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_e754ca46830459a8a4c7e83aecedf39a.setContent(html_4afe2777d00d476908f861cbad9bbbfd);
+            
+        
+
+        circle_marker_87f21836307a0939c6cf810105373a5b.bindPopup(popup_e754ca46830459a8a4c7e83aecedf39a)
+        ;
+
+        
+    
+    
+            var circle_marker_4697b4926b20b094ea617cbba050b2fc = L.circleMarker(
+                [1.4239920631489649, 103.84644704407421],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_50e3c640aa75c905d62e5cf24108fd35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b432aa632854ebcbf43c9725e906a774 = $(`<div id="html_b432aa632854ebcbf43c9725e906a774" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> Y57<br>         <b>Address:</b> BLK 415/417 YISHUN RING ROAD/AVENUE 11<br>         <b>Total Lots:</b> 18<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 5.6%<br>         <b>Parking Pressure:</b> 94.4%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_50e3c640aa75c905d62e5cf24108fd35.setContent(html_b432aa632854ebcbf43c9725e906a774);
+            
+        
+
+        circle_marker_4697b4926b20b094ea617cbba050b2fc.bindPopup(popup_50e3c640aa75c905d62e5cf24108fd35)
+        ;
+
+        
+    
+    
+            var circle_marker_74dfe718fda42c5fedf0243c79de0b79 = L.circleMarker(
+                [1.431218040842972, 103.84814239079112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_cc901197e8ccac0274f6a39aa93a6223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6eb6f9c211bf8b15ef4207033fe5aa56 = $(`<div id="html_6eb6f9c211bf8b15ef4207033fe5aa56" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> Y83L<br>         <b>Address:</b> BLK 382 YISHUN STREET 31<br>         <b>Total Lots:</b> 6<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_cc901197e8ccac0274f6a39aa93a6223.setContent(html_6eb6f9c211bf8b15ef4207033fe5aa56);
+            
+        
+
+        circle_marker_74dfe718fda42c5fedf0243c79de0b79.bindPopup(popup_cc901197e8ccac0274f6a39aa93a6223)
+        ;
+
+        
+    
+    
+            var circle_marker_268502a19a4bd13d121c4cb383cc4f0a = L.circleMarker(
+                [1.3152879383142535, 103.8740882168002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_1bec048de3c47598204cccc608f443af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8b073701d2a83eb64bb514ebe2b9462 = $(`<div id="html_b8b073701d2a83eb64bb514ebe2b9462" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> UBK4<br>         <b>Address:</b> BLK 19/20 UPPER BOON KENG<br>         <b>Total Lots:</b> 53<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 7.5%<br>         <b>Parking Pressure:</b> 92.5%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_1bec048de3c47598204cccc608f443af.setContent(html_b8b073701d2a83eb64bb514ebe2b9462);
+            
+        
+
+        circle_marker_268502a19a4bd13d121c4cb383cc4f0a.bindPopup(popup_1bec048de3c47598204cccc608f443af)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb367283a8dc8e208e3f1631b9a6f11 = L.circleMarker(
+                [1.4375945522901385, 103.77720833374295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_724ba8334e7de3c22abfd711052534a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f650f20d0deb0870008aec734fa2e3e = $(`<div id="html_5f650f20d0deb0870008aec734fa2e3e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W19<br>         <b>Address:</b> BLK 134-143 MARSILING ROAD<br>         <b>Total Lots:</b> 322<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_724ba8334e7de3c22abfd711052534a2.setContent(html_5f650f20d0deb0870008aec734fa2e3e);
+            
+        
+
+        circle_marker_4cb367283a8dc8e208e3f1631b9a6f11.bindPopup(popup_724ba8334e7de3c22abfd711052534a2)
+        ;
+
+        
+    
+    
+            var circle_marker_bf24abda3d6a19c80080e4c377395090 = L.circleMarker(
+                [1.4418753225467174, 103.79043221999984],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_a866fb3d2d7acc6f45d050ed98d34837 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca4b5d0a4779bf36441c4dc6b21c6744 = $(`<div id="html_ca4b5d0a4779bf36441c4dc6b21c6744" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W37<br>         <b>Address:</b> BLK 816-821 WOODLANDS STREET 82<br>         <b>Total Lots:</b> 50<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 2.0%<br>         <b>Parking Pressure:</b> 98.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_a866fb3d2d7acc6f45d050ed98d34837.setContent(html_ca4b5d0a4779bf36441c4dc6b21c6744);
+            
+        
+
+        circle_marker_bf24abda3d6a19c80080e4c377395090.bindPopup(popup_a866fb3d2d7acc6f45d050ed98d34837)
+        ;
+
+        
+    
+    
+            var circle_marker_1e9f5ce438b7aa5f773849ba3411fc90 = L.circleMarker(
+                [1.4421024735721912, 103.77795396332391],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_3bfd5c7d223b61d434335ce6fb8559ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_044ffa410b04a2119f4b15cb3425a5e7 = $(`<div id="html_044ffa410b04a2119f4b15cb3425a5e7" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W6<br>         <b>Address:</b> BLK 15/16 MARSILING LANE<br>         <b>Total Lots:</b> 57<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_3bfd5c7d223b61d434335ce6fb8559ff.setContent(html_044ffa410b04a2119f4b15cb3425a5e7);
+            
+        
+
+        circle_marker_1e9f5ce438b7aa5f773849ba3411fc90.bindPopup(popup_3bfd5c7d223b61d434335ce6fb8559ff)
+        ;
+
+        
+    
+    
+            var circle_marker_d9c8a61cfda4a59e058e726ec1d07da1 = L.circleMarker(
+                [1.44245815058537, 103.77681951196664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8718951289de79dc6d2d059eda672637 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd2c86a53ce35fa70b42410495043342 = $(`<div id="html_cd2c86a53ce35fa70b42410495043342" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W4<br>         <b>Address:</b> BLK 6/7 MARSILING DRIVE<br>         <b>Total Lots:</b> 32<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8718951289de79dc6d2d059eda672637.setContent(html_cd2c86a53ce35fa70b42410495043342);
+            
+        
+
+        circle_marker_d9c8a61cfda4a59e058e726ec1d07da1.bindPopup(popup_8718951289de79dc6d2d059eda672637)
+        ;
+
+        
+    
+    
+            var circle_marker_4b7cbd43628f5e2342aeb6fa799b5743 = L.circleMarker(
+                [1.400659030128735, 103.7502363572965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_ec724aff65035ce8815ab84d50f8fdc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1abd9cf96459f262cb0f44c496c62192 = $(`<div id="html_1abd9cf96459f262cb0f44c496c62192" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK52<br>         <b>Address:</b> BLK 659A/660A/661A CHOA CHU KANG CRESCENT<br>         <b>Total Lots:</b> 247<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_ec724aff65035ce8815ab84d50f8fdc3.setContent(html_1abd9cf96459f262cb0f44c496c62192);
+            
+        
+
+        circle_marker_4b7cbd43628f5e2342aeb6fa799b5743.bindPopup(popup_ec724aff65035ce8815ab84d50f8fdc3)
+        ;
+
+        
+    
+    
+            var circle_marker_cef381186728798f11995b09c71a1cc4 = L.circleMarker(
+                [1.3955982538271992, 103.91008575182195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_1e968d7cc7ec1bf4f2cda85e2bdfd854 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a574a3912623aad894532c726d90f6bb = $(`<div id="html_a574a3912623aad894532c726d90f6bb" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> P6L<br>         <b>Address:</b> BLK 109B PUNGGOL FIELD<br>         <b>Total Lots:</b> 10<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_1e968d7cc7ec1bf4f2cda85e2bdfd854.setContent(html_a574a3912623aad894532c726d90f6bb);
+            
+        
+
+        circle_marker_cef381186728798f11995b09c71a1cc4.bindPopup(popup_1e968d7cc7ec1bf4f2cda85e2bdfd854)
+        ;
+
+        
+    
+    
+            var circle_marker_2c0af8b507a6adf3ae3fb785b0fa0a52 = L.circleMarker(
+                [1.4012553870089215, 103.9098906657592],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_a515974d9e510cd050584f06b10966e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c790ff6b6fe79a64e14d6c1b78a82bb5 = $(`<div id="html_c790ff6b6fe79a64e14d6c1b78a82bb5" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PL33<br>         <b>Address:</b> BLK 621A - 621B EDGEFIELD WALK<br>         <b>Total Lots:</b> 48<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_a515974d9e510cd050584f06b10966e4.setContent(html_c790ff6b6fe79a64e14d6c1b78a82bb5);
+            
+        
+
+        circle_marker_2c0af8b507a6adf3ae3fb785b0fa0a52.bindPopup(popup_a515974d9e510cd050584f06b10966e4)
+        ;
+
+        
+    
+    
+            var circle_marker_57636ea262cfd72cc14f2a98f364b1db = L.circleMarker(
+                [1.3420166824734492, 103.74009365443025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_d8786c82170e5d980bb969b4a41b7fc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7a80bfe316bf628369c7823e492bbd2 = $(`<div id="html_c7a80bfe316bf628369c7823e492bbd2" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> J10<br>         <b>Address:</b> BLK 246/249 JURONG EAST STREET 24<br>         <b>Total Lots:</b> 120<br>         <b>Lots Available:</b> 6<br>         <b>Availability Rate:</b> 5.0%<br>         <b>Parking Pressure:</b> 95.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_d8786c82170e5d980bb969b4a41b7fc2.setContent(html_c7a80bfe316bf628369c7823e492bbd2);
+            
+        
+
+        circle_marker_57636ea262cfd72cc14f2a98f364b1db.bindPopup(popup_d8786c82170e5d980bb969b4a41b7fc2)
+        ;
+
+        
+    
+    
+            var circle_marker_dfddb4c910c074a4e52943fa8a14cdfb = L.circleMarker(
+                [1.387658345966919, 103.89216437348863],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_06be08391407bf2b844614282c60aebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c854930cb771a0bd6d04fadbb4c8e272 = $(`<div id="html_c854930cb771a0bd6d04fadbb4c8e272" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> SK32<br>         <b>Address:</b> BLK 200 SENGKANG EAST ROAD<br>         <b>Total Lots:</b> 528<br>         <b>Lots Available:</b> 27<br>         <b>Availability Rate:</b> 5.1%<br>         <b>Parking Pressure:</b> 94.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_06be08391407bf2b844614282c60aebd.setContent(html_c854930cb771a0bd6d04fadbb4c8e272);
+            
+        
+
+        circle_marker_dfddb4c910c074a4e52943fa8a14cdfb.bindPopup(popup_06be08391407bf2b844614282c60aebd)
+        ;
+
+        
+    
+    
+            var circle_marker_b7ebb04612a96a1f74b984f1dfa56a43 = L.circleMarker(
+                [1.2933650054100614, 103.80345452106414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9182cc5c1567712dc4920ebe36abe328 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5869121c5a14093b1a76d5f0dd189f6 = $(`<div id="html_b5869121c5a14093b1a76d5f0dd189f6" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MLM<br>         <b>Address:</b> BLK 157A MEI LING STREET<br>         <b>Total Lots:</b> 277<br>         <b>Lots Available:</b> 23<br>         <b>Availability Rate:</b> 8.3%<br>         <b>Parking Pressure:</b> 91.7%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9182cc5c1567712dc4920ebe36abe328.setContent(html_b5869121c5a14093b1a76d5f0dd189f6);
+            
+        
+
+        circle_marker_b7ebb04612a96a1f74b984f1dfa56a43.bindPopup(popup_9182cc5c1567712dc4920ebe36abe328)
+        ;
+
+        
+    
+    
+            var circle_marker_4933d8b90d20ff0f87632ca314d88b04 = L.circleMarker(
+                [1.3574951697204816, 103.84453538273506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_4265b4f49daa6a5f06846c4433d176d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e6b1ba26a179cc7720cc27e9ea2851d = $(`<div id="html_7e6b1ba26a179cc7720cc27e9ea2851d" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE36<br>         <b>Address:</b> BLK 278-281 BISHAN STREET 24<br>         <b>Total Lots:</b> 50<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 4.0%<br>         <b>Parking Pressure:</b> 96.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_4265b4f49daa6a5f06846c4433d176d2.setContent(html_7e6b1ba26a179cc7720cc27e9ea2851d);
+            
+        
+
+        circle_marker_4933d8b90d20ff0f87632ca314d88b04.bindPopup(popup_4265b4f49daa6a5f06846c4433d176d2)
+        ;
+
+        
+    
+    
+            var circle_marker_bd1531ee180ba2dcf10de24abfc46a21 = L.circleMarker(
+                [1.3588986300125845, 103.84456648767798],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_16205832b83f8e49feadc4f37a55a8b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8cd79ae3ce7efe51367ff69467663cb = $(`<div id="html_f8cd79ae3ce7efe51367ff69467663cb" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE38<br>         <b>Address:</b> BLK 283/284 BISHAN STREET 22<br>         <b>Total Lots:</b> 26<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_16205832b83f8e49feadc4f37a55a8b6.setContent(html_f8cd79ae3ce7efe51367ff69467663cb);
+            
+        
+
+        circle_marker_bd1531ee180ba2dcf10de24abfc46a21.bindPopup(popup_16205832b83f8e49feadc4f37a55a8b6)
+        ;
+
+        
+    
+    
+            var circle_marker_f8bb6b040adde19812461b59319e1114 = L.circleMarker(
+                [1.3087364754979458, 103.8823513067258],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_44e88d4745f5d8a6c64b57055de21006 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be6631fcbb22fddda00b9a3b756d2bd0 = $(`<div id="html_be6631fcbb22fddda00b9a3b756d2bd0" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> K2<br>         <b>Address:</b> BLK 9,10,12 PINE CLOSE<br>         <b>Total Lots:</b> 95<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_44e88d4745f5d8a6c64b57055de21006.setContent(html_be6631fcbb22fddda00b9a3b756d2bd0);
+            
+        
+
+        circle_marker_f8bb6b040adde19812461b59319e1114.bindPopup(popup_44e88d4745f5d8a6c64b57055de21006)
+        ;
+
+        
+    
+    
+            var circle_marker_56712d035d156b7c5b80fe389d9b543b = L.circleMarker(
+                [1.3075380133900372, 103.88354363243664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_805be8d50b498561efc29cc1d99b1bba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6959287900577d7c4e18e8914cf6f7c7 = $(`<div id="html_6959287900577d7c4e18e8914cf6f7c7" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> K2T<br>         <b>Address:</b> BLK 21 JALAN EMPAT<br>         <b>Total Lots:</b> 73<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_805be8d50b498561efc29cc1d99b1bba.setContent(html_6959287900577d7c4e18e8914cf6f7c7);
+            
+        
+
+        circle_marker_56712d035d156b7c5b80fe389d9b543b.bindPopup(popup_805be8d50b498561efc29cc1d99b1bba)
+        ;
+
+        
+    
+    
+            var circle_marker_a531db892cdf397adf9f16084b612654 = L.circleMarker(
+                [1.320962408767416, 103.88630883704475],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_de30b6b100b7aa5eec5276060177fc0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eba603ef99b760f61d9444ee7f710c97 = $(`<div id="html_eba603ef99b760f61d9444ee7f710c97" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> GE1G<br>         <b>Address:</b> BLK 95 & 113 ALJUNIED CRESCENT<br>         <b>Total Lots:</b> 45<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 2.2%<br>         <b>Parking Pressure:</b> 97.8%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_de30b6b100b7aa5eec5276060177fc0a.setContent(html_eba603ef99b760f61d9444ee7f710c97);
+            
+        
+
+        circle_marker_a531db892cdf397adf9f16084b612654.bindPopup(popup_de30b6b100b7aa5eec5276060177fc0a)
+        ;
+
+        
+    
+    
+            var circle_marker_ff84d316927f500f245ca95d6f200587 = L.circleMarker(
+                [1.302401825492277, 103.88278658416117],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_3fd793f96dc7135a9e24015eb0e5ce39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2342870c53748674515bc519a8a50047 = $(`<div id="html_2342870c53748674515bc519a8a50047" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> JB1<br>         <b>Address:</b> BLK 3-5,7,8,4A JALAN BATU<br>         <b>Total Lots:</b> 70<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 5.7%<br>         <b>Parking Pressure:</b> 94.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_3fd793f96dc7135a9e24015eb0e5ce39.setContent(html_2342870c53748674515bc519a8a50047);
+            
+        
+
+        circle_marker_ff84d316927f500f245ca95d6f200587.bindPopup(popup_3fd793f96dc7135a9e24015eb0e5ce39)
+        ;
+
+        
+    
+    
+            var circle_marker_16555a77c2cf3afb346daddee3481db3 = L.circleMarker(
+                [1.3016276066884178, 103.88299671364969],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_47244d4a7b016f48ba13e670d9263774 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78088dca47038c6c6854fe6b9f4a6252 = $(`<div id="html_78088dca47038c6c6854fe6b9f4a6252" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> JB2<br>         <b>Address:</b> BLK 10-11 JALAN BATU<br>         <b>Total Lots:</b> 58<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_47244d4a7b016f48ba13e670d9263774.setContent(html_78088dca47038c6c6854fe6b9f4a6252);
+            
+        
+
+        circle_marker_16555a77c2cf3afb346daddee3481db3.bindPopup(popup_47244d4a7b016f48ba13e670d9263774)
+        ;
+
+        
+    
+    
+            var circle_marker_1168fa6154c22db83351a57ce95d8422 = L.circleMarker(
+                [1.3061096468902569, 103.91616519665847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_97e37dd6f9baf4b84bf5e99a5c508230 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fae61f52b7956df57d1b04cc38fce6c = $(`<div id="html_0fae61f52b7956df57d1b04cc38fce6c" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MP5<br>         <b>Address:</b> BLK 52/57 MARINE TERRACE<br>         <b>Total Lots:</b> 162<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 0.6%<br>         <b>Parking Pressure:</b> 99.4%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_97e37dd6f9baf4b84bf5e99a5c508230.setContent(html_0fae61f52b7956df57d1b04cc38fce6c);
+            
+        
+
+        circle_marker_1168fa6154c22db83351a57ce95d8422.bindPopup(popup_97e37dd6f9baf4b84bf5e99a5c508230)
+        ;
+
+        
+    
+    
+            var circle_marker_39012f8d7db8e5dafe0641ef998a4bca = L.circleMarker(
+                [1.3046720374995606, 103.91256924764082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_f3e5320af5f5c8303a0a188515814e22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_749bfe7b025f333ccbcbcd9655c94b12 = $(`<div id="html_749bfe7b025f333ccbcbcd9655c94b12" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MP5S<br>         <b>Address:</b> BLK 45 MARINE CRESCENT<br>         <b>Total Lots:</b> 33<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_f3e5320af5f5c8303a0a188515814e22.setContent(html_749bfe7b025f333ccbcbcd9655c94b12);
+            
+        
+
+        circle_marker_39012f8d7db8e5dafe0641ef998a4bca.bindPopup(popup_f3e5320af5f5c8303a0a188515814e22)
+        ;
+
+        
+    
+    
+            var circle_marker_34dbd556321367fff7fc15896380d48a = L.circleMarker(
+                [1.3574527003474106, 103.84590085114523],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_f1a801674d4a8983092a2f06f1e8f093 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4956e115712d0a00b7bd547ace64c17 = $(`<div id="html_e4956e115712d0a00b7bd547ace64c17" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE29<br>         <b>Address:</b> BLK 228-231 BISHAN STREET 23<br>         <b>Total Lots:</b> 39<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_f1a801674d4a8983092a2f06f1e8f093.setContent(html_e4956e115712d0a00b7bd547ace64c17);
+            
+        
+
+        circle_marker_34dbd556321367fff7fc15896380d48a.bindPopup(popup_f1a801674d4a8983092a2f06f1e8f093)
+        ;
+
+        
+    
+    
+            var circle_marker_04745fd0758b2c88df1fa92e849205ec = L.circleMarker(
+                [1.3464955373934115, 103.84837778261435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_93bc140ce68972d72b57e28f9be6572c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b89162c98742a73bf3624e8f5dd129c3 = $(`<div id="html_b89162c98742a73bf3624e8f5dd129c3" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE4<br>         <b>Address:</b> BLK 101-116 BISHAN STREET 12<br>         <b>Total Lots:</b> 369<br>         <b>Lots Available:</b> 11<br>         <b>Availability Rate:</b> 3.0%<br>         <b>Parking Pressure:</b> 97.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_93bc140ce68972d72b57e28f9be6572c.setContent(html_b89162c98742a73bf3624e8f5dd129c3);
+            
+        
+
+        circle_marker_04745fd0758b2c88df1fa92e849205ec.bindPopup(popup_93bc140ce68972d72b57e28f9be6572c)
+        ;
+
+        
+    
+    
+            var circle_marker_dd28b58aa626b87ca8b4bc5bb4f69f54 = L.circleMarker(
+                [1.2857124480254343, 103.81870264853309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_a737c9b5d37ec7551c89a78115c451a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e00748889fc1ea7328325bff1299f7ac = $(`<div id="html_e00748889fc1ea7328325bff1299f7ac" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BM19<br>         <b>Address:</b> BLK 88/89 REDHILL CLOSE<br>         <b>Total Lots:</b> 16<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_a737c9b5d37ec7551c89a78115c451a3.setContent(html_e00748889fc1ea7328325bff1299f7ac);
+            
+        
+
+        circle_marker_dd28b58aa626b87ca8b4bc5bb4f69f54.bindPopup(popup_a737c9b5d37ec7551c89a78115c451a3)
+        ;
+
+        
+    
+    
+            var circle_marker_0f94231022df6217f69a0f077c07ddb9 = L.circleMarker(
+                [1.2877269654910475, 103.83092213801466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_d3dd64c8b441d68ca4719582fe7c019a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b482195478c0f7e45a8285fc242bf20 = $(`<div id="html_8b482195478c0f7e45a8285fc242bf20" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> H8<br>         <b>Address:</b> BLKS 4-8 TAMAN HO SWEE<br>         <b>Total Lots:</b> 82<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_d3dd64c8b441d68ca4719582fe7c019a.setContent(html_8b482195478c0f7e45a8285fc242bf20);
+            
+        
+
+        circle_marker_0f94231022df6217f69a0f077c07ddb9.bindPopup(popup_d3dd64c8b441d68ca4719582fe7c019a)
+        ;
+
+        
+    
+    
+            var circle_marker_a48a90872e7640e53e7c15d21a74c960 = L.circleMarker(
+                [1.2905406191010664, 103.82098507674438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7a44cd7fc6cdd7b28f3d8013581d93c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5e989f9081c006d0bdd8ce170205570 = $(`<div id="html_f5e989f9081c006d0bdd8ce170205570" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> HE19<br>         <b>Address:</b> BLK 101 ALEXANDRA CRESCENT<br>         <b>Total Lots:</b> 93<br>         <b>Lots Available:</b> 9<br>         <b>Availability Rate:</b> 9.7%<br>         <b>Parking Pressure:</b> 90.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7a44cd7fc6cdd7b28f3d8013581d93c8.setContent(html_f5e989f9081c006d0bdd8ce170205570);
+            
+        
+
+        circle_marker_a48a90872e7640e53e7c15d21a74c960.bindPopup(popup_7a44cd7fc6cdd7b28f3d8013581d93c8)
+        ;
+
+        
+    
+    
+            var circle_marker_2c592517195d8e706c6bc66deb770d8b = L.circleMarker(
+                [1.2814814461425357, 103.82729731282093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7918f58cc85e5e424fe67754e8b147a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67038fb344b7fc6a4a21352cb38ee869 = $(`<div id="html_67038fb344b7fc6a4a21352cb38ee869" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> KTM4<br>         <b>Address:</b> BLK 119A KIM TIAN ROAD<br>         <b>Total Lots:</b> 380<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7918f58cc85e5e424fe67754e8b147a6.setContent(html_67038fb344b7fc6a4a21352cb38ee869);
+            
+        
+
+        circle_marker_2c592517195d8e706c6bc66deb770d8b.bindPopup(popup_7918f58cc85e5e424fe67754e8b147a6)
+        ;
+
+        
+    
+    
+            var circle_marker_9164ddd8c69b0206618211b8da3c4a75 = L.circleMarker(
+                [1.2893340477316146, 103.81522033138317],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_3c31ba63bcc3a7f68f9e0073b8dc076c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b338a3a9fe8659837f45b6b64a6412e2 = $(`<div id="html_b338a3a9fe8659837f45b6b64a6412e2" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> LBM<br>         <b>Address:</b> BLK 64 LENGKOK BAHRU<br>         <b>Total Lots:</b> 169<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_3c31ba63bcc3a7f68f9e0073b8dc076c.setContent(html_b338a3a9fe8659837f45b6b64a6412e2);
+            
+        
+
+        circle_marker_9164ddd8c69b0206618211b8da3c4a75.bindPopup(popup_3c31ba63bcc3a7f68f9e0073b8dc076c)
+        ;
+
+        
+    
+    
+            var circle_marker_b8e506553750535b62abfd37b17775b8 = L.circleMarker(
+                [1.330443473364623, 103.93980899840454],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_968cad60722a2edd9b5d820e6acb007d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_046a39546bba693fb0514e58b7f91c6f = $(`<div id="html_046a39546bba693fb0514e58b7f91c6f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> B23L<br>         <b>Address:</b> BLK 187 BEDOK NORTH STREET 4<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_968cad60722a2edd9b5d820e6acb007d.setContent(html_046a39546bba693fb0514e58b7f91c6f);
+            
+        
+
+        circle_marker_b8e506553750535b62abfd37b17775b8.bindPopup(popup_968cad60722a2edd9b5d820e6acb007d)
+        ;
+
+        
+    
+    
+            var circle_marker_daebf20fce5a20799dae4e1fe113a4fc = L.circleMarker(
+                [1.288288613825525, 103.81561639580673],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_45ccf0908f39eca48d3bada6912aa25b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be9c9ef4c00790172e23a13e7c34ca22 = $(`<div id="html_be9c9ef4c00790172e23a13e7c34ca22" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> RHS<br>         <b>Address:</b> BLK 75A/B REDHILL ROAD<br>         <b>Total Lots:</b> 12<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_45ccf0908f39eca48d3bada6912aa25b.setContent(html_be9c9ef4c00790172e23a13e7c34ca22);
+            
+        
+
+        circle_marker_daebf20fce5a20799dae4e1fe113a4fc.bindPopup(popup_45ccf0908f39eca48d3bada6912aa25b)
+        ;
+
+        
+    
+    
+            var circle_marker_48da0db898f3933ccdfc7afe22cf2792 = L.circleMarker(
+                [1.3081555032749435, 103.86079175042093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_495ae8227476b3fab4216a11fff9baf2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_872bd363be6a7be7f7293b6ae189f4d8 = $(`<div id="html_872bd363be6a7be7f7293b6ae189f4d8" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MR5<br>         <b>Address:</b> BLK 804/805, 809 MAUDE ROAD<br>         <b>Total Lots:</b> 84<br>         <b>Lots Available:</b> 6<br>         <b>Availability Rate:</b> 7.1%<br>         <b>Parking Pressure:</b> 92.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_495ae8227476b3fab4216a11fff9baf2.setContent(html_872bd363be6a7be7f7293b6ae189f4d8);
+            
+        
+
+        circle_marker_48da0db898f3933ccdfc7afe22cf2792.bindPopup(popup_495ae8227476b3fab4216a11fff9baf2)
+        ;
+
+        
+    
+    
+            var circle_marker_60efaec1ac67e05b763d746ff9732e0b = L.circleMarker(
+                [1.4310251932285876, 103.7739106135832],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_347f24a23e99a8fdd7caac7079248fa9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e87047b4ff6172e763bb60a6a34e050d = $(`<div id="html_e87047b4ff6172e763bb60a6a34e050d" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W27<br>         <b>Address:</b> BLK 303 WOODLANDS STREET 31<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_347f24a23e99a8fdd7caac7079248fa9.setContent(html_e87047b4ff6172e763bb60a6a34e050d);
+            
+        
+
+        circle_marker_60efaec1ac67e05b763d746ff9732e0b.bindPopup(popup_347f24a23e99a8fdd7caac7079248fa9)
+        ;
+
+        
+    
+    
+            var circle_marker_baf3fba40915c0c6b4a7255bc0bd769f = L.circleMarker(
+                [1.3310224198845195, 103.84448757302619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_98bcd48c21f1034f60437525841dd4ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f2d6869e4a427c0bda7d28a53009014 = $(`<div id="html_5f2d6869e4a427c0bda7d28a53009014" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP20<br>         <b>Address:</b> BLK 158-161/163/168-174 LORONG 1 TOA PAYOH<br>         <b>Total Lots:</b> 90<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_98bcd48c21f1034f60437525841dd4ff.setContent(html_5f2d6869e4a427c0bda7d28a53009014);
+            
+        
+
+        circle_marker_baf3fba40915c0c6b4a7255bc0bd769f.bindPopup(popup_98bcd48c21f1034f60437525841dd4ff)
+        ;
+
+        
+    
+    
+            var circle_marker_4c20d621131ba2f78447382d6d912749 = L.circleMarker(
+                [1.335341205575825, 103.85155022411512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_da0d3c6fa7b4c0a276bc22933a2a1789 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05abad984fab48582f5c4779bd14790e = $(`<div id="html_05abad984fab48582f5c4779bd14790e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP3<br>         <b>Address:</b> BLK 66/70/73 LORONG 4 TOA PAYOH<br>         <b>Total Lots:</b> 27<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 7.4%<br>         <b>Parking Pressure:</b> 92.6%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_da0d3c6fa7b4c0a276bc22933a2a1789.setContent(html_05abad984fab48582f5c4779bd14790e);
+            
+        
+
+        circle_marker_4c20d621131ba2f78447382d6d912749.bindPopup(popup_da0d3c6fa7b4c0a276bc22933a2a1789)
+        ;
+
+        
+    
+    
+            var circle_marker_261d8f9ed6b524cf2cf685327545747e = L.circleMarker(
+                [1.340605801519672, 103.84633277507496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_b69cdfb096269f7941e71fe2517dd8b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a89110f6388ce964e5283fa22dd5e02 = $(`<div id="html_8a89110f6388ce964e5283fa22dd5e02" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP30<br>         <b>Address:</b> BLK 116/122 LORONG 1 TOA PAYOH<br>         <b>Total Lots:</b> 30<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_b69cdfb096269f7941e71fe2517dd8b8.setContent(html_8a89110f6388ce964e5283fa22dd5e02);
+            
+        
+
+        circle_marker_261d8f9ed6b524cf2cf685327545747e.bindPopup(popup_b69cdfb096269f7941e71fe2517dd8b8)
+        ;
+
+        
+    
+    
+            var circle_marker_0ec8994e71aad5dcd8148dbcee8ba3ca = L.circleMarker(
+                [1.3375715055634887, 103.85668073960237],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_c90a253c6d045ff514607efa51f2fd0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_484a84f51fdb060e6ba9e0b119103b90 = $(`<div id="html_484a84f51fdb060e6ba9e0b119103b90" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TP48<br>         <b>Address:</b> BLK 8 LORONG 7 TOA PAYOH<br>         <b>Total Lots:</b> 21<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_c90a253c6d045ff514607efa51f2fd0f.setContent(html_484a84f51fdb060e6ba9e0b119103b90);
+            
+        
+
+        circle_marker_0ec8994e71aad5dcd8148dbcee8ba3ca.bindPopup(popup_c90a253c6d045ff514607efa51f2fd0f)
+        ;
+
+        
+    
+    
+            var circle_marker_59d6a54dfbd1bc5c3c0d77e2a62e92cd = L.circleMarker(
+                [1.2898270512586238, 103.8033264959866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_3f7fcb14a5154c380b8be58fd4b4d435 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70c975c366a1292aa34d34c43f776d83 = $(`<div id="html_70c975c366a1292aa34d34c43f776d83" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> STM3<br>         <b>Address:</b> BLK 168-171 STIRLING ROAD<br>         <b>Total Lots:</b> 13<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_3f7fcb14a5154c380b8be58fd4b4d435.setContent(html_70c975c366a1292aa34d34c43f776d83);
+            
+        
+
+        circle_marker_59d6a54dfbd1bc5c3c0d77e2a62e92cd.bindPopup(popup_3f7fcb14a5154c380b8be58fd4b4d435)
+        ;
+
+        
+    
+    
+            var circle_marker_bb6dbc138020d228ce5e1cd6741dc8e3 = L.circleMarker(
+                [1.3716499282813763, 103.83746428814854],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_d31d625febc831aa70000026bcb70b13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b9fa5e2443af7ce42a622cb9b4dde01 = $(`<div id="html_2b9fa5e2443af7ce42a622cb9b4dde01" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> A28<br>         <b>Address:</b> BLK 103/105/107 ANG MO KIO STREET 11<br>         <b>Total Lots:</b> 81<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 4.9%<br>         <b>Parking Pressure:</b> 95.1%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_d31d625febc831aa70000026bcb70b13.setContent(html_2b9fa5e2443af7ce42a622cb9b4dde01);
+            
+        
+
+        circle_marker_bb6dbc138020d228ce5e1cd6741dc8e3.bindPopup(popup_d31d625febc831aa70000026bcb70b13)
+        ;
+
+        
+    
+    
+            var circle_marker_f6d5cbb6d6163ae425e1c4c94ca59c03 = L.circleMarker(
+                [1.273911368539902, 103.8075810262176],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_14b1fb4f9fdc864733f319533a874ffc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddf6ca35534d5584289ba5e9e8936a7f = $(`<div id="html_ddf6ca35534d5584289ba5e9e8936a7f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TB22<br>         <b>Address:</b> BLK 79/80/81 TELOK BLANGAH DRIVE<br>         <b>Total Lots:</b> 20<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_14b1fb4f9fdc864733f319533a874ffc.setContent(html_ddf6ca35534d5584289ba5e9e8936a7f);
+            
+        
+
+        circle_marker_f6d5cbb6d6163ae425e1c4c94ca59c03.bindPopup(popup_14b1fb4f9fdc864733f319533a874ffc)
+        ;
+
+        
+    
+    
+            var circle_marker_4ad1d44f705f9c293de7f0259674cac7 = L.circleMarker(
+                [1.2813137150572278, 103.82645402589318],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_1cd82bdcbd6e232ca911cdf42f7d3bba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f1e3d28c976f73cf14dfff276231c36 = $(`<div id="html_6f1e3d28c976f73cf14dfff276231c36" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> TE1<br>         <b>Address:</b> BLK 115-117 JALAN BUKIT MERAH<br>         <b>Total Lots:</b> 90<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 1.1%<br>         <b>Parking Pressure:</b> 98.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_1cd82bdcbd6e232ca911cdf42f7d3bba.setContent(html_6f1e3d28c976f73cf14dfff276231c36);
+            
+        
+
+        circle_marker_4ad1d44f705f9c293de7f0259674cac7.bindPopup(popup_1cd82bdcbd6e232ca911cdf42f7d3bba)
+        ;
+
+        
+    
+    
+            var circle_marker_6ee1fe3d701082ecb6db2a65998dfc0b = L.circleMarker(
+                [1.277163553465462, 103.83991265403928],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_b8e8104d704b91d946bb5884448cd9e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f57c5bac2a2f8145e3457df9b170446 = $(`<div id="html_4f57c5bac2a2f8145e3457df9b170446" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> EPL<br>         <b>Address:</b> BLK 1/7 EVERTON PARK<br>         <b>Total Lots:</b> 3<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_b8e8104d704b91d946bb5884448cd9e1.setContent(html_4f57c5bac2a2f8145e3457df9b170446);
+            
+        
+
+        circle_marker_6ee1fe3d701082ecb6db2a65998dfc0b.bindPopup(popup_b8e8104d704b91d946bb5884448cd9e1)
+        ;
+
+        
+    
+    
+            var circle_marker_19b17a7c9747873c56592d86b8bfe399 = L.circleMarker(
+                [1.446460665222016, 103.7999034357181],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_84506069c4aa7891dfcdbce39d761e8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6bd8470e74459e7903336ef4368f5090 = $(`<div id="html_6bd8470e74459e7903336ef4368f5090" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W799<br>         <b>Address:</b> BLK 799 WOODLANDS DRIVE 60<br>         <b>Total Lots:</b> 76<br>         <b>Lots Available:</b> 4<br>         <b>Availability Rate:</b> 5.3%<br>         <b>Parking Pressure:</b> 94.7%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_84506069c4aa7891dfcdbce39d761e8d.setContent(html_6bd8470e74459e7903336ef4368f5090);
+            
+        
+
+        circle_marker_19b17a7c9747873c56592d86b8bfe399.bindPopup(popup_84506069c4aa7891dfcdbce39d761e8d)
+        ;
+
+        
+    
+    
+            var circle_marker_efb46217e23ceaf3bec63b556ce598c0 = L.circleMarker(
+                [1.4038622806100292, 103.90798247324102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_36477cef6974aa377d52df0da6fa509b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b849b8ff1d5202ca7e701adf63a22b46 = $(`<div id="html_b849b8ff1d5202ca7e701adf63a22b46" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PL34<br>         <b>Address:</b> BLK 603 PUNGGOL ROAD<br>         <b>Total Lots:</b> 15<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_36477cef6974aa377d52df0da6fa509b.setContent(html_b849b8ff1d5202ca7e701adf63a22b46);
+            
+        
+
+        circle_marker_efb46217e23ceaf3bec63b556ce598c0.bindPopup(popup_36477cef6974aa377d52df0da6fa509b)
+        ;
+
+        
+    
+    
+            var circle_marker_087bee178723da1467f72e1d6f1e6a91 = L.circleMarker(
+                [1.4022418712257227, 103.90762249223593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_2b3b9080038827c4ac425ee03a094f56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc4c9f31989161b15b3b22a928f1e9e0 = $(`<div id="html_cc4c9f31989161b15b3b22a928f1e9e0" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> P35L<br>         <b>Address:</b> PUNGGOL CENTRAL<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_2b3b9080038827c4ac425ee03a094f56.setContent(html_cc4c9f31989161b15b3b22a928f1e9e0);
+            
+        
+
+        circle_marker_087bee178723da1467f72e1d6f1e6a91.bindPopup(popup_2b3b9080038827c4ac425ee03a094f56)
+        ;
+
+        
+    
+    
+            var circle_marker_46126d2849c69da514dc9ca63c3c8e7c = L.circleMarker(
+                [1.3230388252880447, 103.85353576307051],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9eea807d7e7749f0480b4c22757bbd92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fac8f9b2087b969e23e7151db3bd6ecd = $(`<div id="html_fac8f9b2087b969e23e7151db3bd6ecd" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BR6<br>         <b>Address:</b> BLK 92 WHAMPOA DRIVE<br>         <b>Total Lots:</b> 131<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9eea807d7e7749f0480b4c22757bbd92.setContent(html_fac8f9b2087b969e23e7151db3bd6ecd);
+            
+        
+
+        circle_marker_46126d2849c69da514dc9ca63c3c8e7c.bindPopup(popup_9eea807d7e7749f0480b4c22757bbd92)
+        ;
+
+        
+    
+    
+            var circle_marker_c2a2d0c9ff885c00feb56421103b1d07 = L.circleMarker(
+                [1.3230185394991723, 103.85450430527487],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8368b7dd609ed290ffa362e10b8466ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6173a650ea4c20ab2614e0dd8a284f79 = $(`<div id="html_6173a650ea4c20ab2614e0dd8a284f79" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BR10<br>         <b>Address:</b> BLK 90 WHAMPOA DRIVE<br>         <b>Total Lots:</b> 59<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8368b7dd609ed290ffa362e10b8466ef.setContent(html_6173a650ea4c20ab2614e0dd8a284f79);
+            
+        
+
+        circle_marker_c2a2d0c9ff885c00feb56421103b1d07.bindPopup(popup_8368b7dd609ed290ffa362e10b8466ef)
+        ;
+
+        
+    
+    
+            var circle_marker_24a2d4d661aa3f63e4337ebb17e75c65 = L.circleMarker(
+                [1.317031227538219, 103.89848850385351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_58225bf0a57adb0c2b0896e56f38260f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bc9be5c138610d129107645107638e9 = $(`<div id="html_4bc9be5c138610d129107645107638e9" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> GSML<br>         <b>Address:</b> BLK 2 GEYLANG SERAI<br>         <b>Total Lots:</b> 22<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_58225bf0a57adb0c2b0896e56f38260f.setContent(html_4bc9be5c138610d129107645107638e9);
+            
+        
+
+        circle_marker_24a2d4d661aa3f63e4337ebb17e75c65.bindPopup(popup_58225bf0a57adb0c2b0896e56f38260f)
+        ;
+
+        
+    
+    
+            var circle_marker_be8d947457d558ddf06ff4bb9eaaa65a = L.circleMarker(
+                [1.3814959737886174, 103.74491781005548],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_f45df20f06afd0ee1c697d12fb8080ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cf390991baa774f2e2680d7fd60be78 = $(`<div id="html_3cf390991baa774f2e2680d7fd60be78" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK9<br>         <b>Address:</b> BLK 223-227 CHOA CHU KANG CENTRAL<br>         <b>Total Lots:</b> 43<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_f45df20f06afd0ee1c697d12fb8080ea.setContent(html_3cf390991baa774f2e2680d7fd60be78);
+            
+        
+
+        circle_marker_be8d947457d558ddf06ff4bb9eaaa65a.bindPopup(popup_f45df20f06afd0ee1c697d12fb8080ea)
+        ;
+
+        
+    
+    
+            var circle_marker_810a7bb59a05aff93658569a3d1e248e = L.circleMarker(
+                [1.331321224401747, 103.92418195189384],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7c0b638ac95123df5e4b9929e8dccf5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c90bf290a82b954144ae6a45a026d32d = $(`<div id="html_c90bf290a82b954144ae6a45a026d32d" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> B46<br>         <b>Address:</b> BLK 537 BEDOK NORTH STREET 3<br>         <b>Total Lots:</b> 64<br>         <b>Lots Available:</b> 6<br>         <b>Availability Rate:</b> 9.4%<br>         <b>Parking Pressure:</b> 90.6%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7c0b638ac95123df5e4b9929e8dccf5b.setContent(html_c90bf290a82b954144ae6a45a026d32d);
+            
+        
+
+        circle_marker_810a7bb59a05aff93658569a3d1e248e.bindPopup(popup_7c0b638ac95123df5e4b9929e8dccf5b)
+        ;
+
+        
+    
+    
+            var circle_marker_f5a999c79d37dc03fb22fcc23874153e = L.circleMarker(
+                [1.4006269776141702, 103.9009163284307],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_35a5b2b2eda745912408bce7bf837689 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55941e023e7adb0027b6c0ee30d82666 = $(`<div id="html_55941e023e7adb0027b6c0ee30d82666" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PL47<br>         <b>Address:</b> BLK 207 PUNGGOL PLACE<br>         <b>Total Lots:</b> 214<br>         <b>Lots Available:</b> 13<br>         <b>Availability Rate:</b> 6.1%<br>         <b>Parking Pressure:</b> 93.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_35a5b2b2eda745912408bce7bf837689.setContent(html_55941e023e7adb0027b6c0ee30d82666);
+            
+        
+
+        circle_marker_f5a999c79d37dc03fb22fcc23874153e.bindPopup(popup_35a5b2b2eda745912408bce7bf837689)
+        ;
+
+        
+    
+    
+            var circle_marker_5ad59a351fa023a7abe03c8d982809b2 = L.circleMarker(
+                [1.3687560709932358, 103.84330771146671],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_67c239efb94d1b0a9a4b41107c428229 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1c0227091a164b34eb8aa6f65659003 = $(`<div id="html_a1c0227091a164b34eb8aa6f65659003" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> A8<br>         <b>Address:</b> BLK 209/210 ANG MO KIO STREET 22<br>         <b>Total Lots:</b> 52<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 1.9%<br>         <b>Parking Pressure:</b> 98.1%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_67c239efb94d1b0a9a4b41107c428229.setContent(html_a1c0227091a164b34eb8aa6f65659003);
+            
+        
+
+        circle_marker_5ad59a351fa023a7abe03c8d982809b2.bindPopup(popup_67c239efb94d1b0a9a4b41107c428229)
+        ;
+
+        
+    
+    
+            var circle_marker_98038c6a4f3b57f72237dc32fdc940a9 = L.circleMarker(
+                [1.3078189305831878, 103.85159633923459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_d76bba27ca9321c97b8f6327ff649c89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a804f0c371027a47b51f66fca63022f6 = $(`<div id="html_a804f0c371027a47b51f66fca63022f6" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BKE1<br>         <b>Address:</b> BLK 668 CHANDER ROAD<br>         <b>Total Lots:</b> 5<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_d76bba27ca9321c97b8f6327ff649c89.setContent(html_a804f0c371027a47b51f66fca63022f6);
+            
+        
+
+        circle_marker_98038c6a4f3b57f72237dc32fdc940a9.bindPopup(popup_d76bba27ca9321c97b8f6327ff649c89)
+        ;
+
+        
+    
+    
+            var circle_marker_cffd483bc4d77a0c90cce8cb3cddc4a5 = L.circleMarker(
+                [1.3026824721868335, 103.90597861451549],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_61f47f9b66eb969246a5b0ad1fa3fed1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_113b6a78b5d680c26e988a15e9883278 = $(`<div id="html_113b6a78b5d680c26e988a15e9883278" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MP15<br>         <b>Address:</b> BLK 83/87 MARINE PARADE ROAD<br>         <b>Total Lots:</b> 23<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_61f47f9b66eb969246a5b0ad1fa3fed1.setContent(html_113b6a78b5d680c26e988a15e9883278);
+            
+        
+
+        circle_marker_cffd483bc4d77a0c90cce8cb3cddc4a5.bindPopup(popup_61f47f9b66eb969246a5b0ad1fa3fed1)
+        ;
+
+        
+    
+    
+            var circle_marker_64d5c324b29d15f3db51c00d8c275064 = L.circleMarker(
+                [1.301883433865292, 103.90654207816098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_3274b27898f511f251af37f07e3f7722 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f30583bae1a7f4be1983aaacbd6f6b0e = $(`<div id="html_f30583bae1a7f4be1983aaacbd6f6b0e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MP16<br>         <b>Address:</b> BLK 84 TO 86 MARINE PARADE ROAD<br>         <b>Total Lots:</b> 22<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_3274b27898f511f251af37f07e3f7722.setContent(html_f30583bae1a7f4be1983aaacbd6f6b0e);
+            
+        
+
+        circle_marker_64d5c324b29d15f3db51c00d8c275064.bindPopup(popup_3274b27898f511f251af37f07e3f7722)
+        ;
+
+        
+    
+    
+            var circle_marker_9599ed9b1d362ea31b6a415e2bbff328 = L.circleMarker(
+                [1.3146924061758303, 103.8960013870619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_cdd0c1eedf8dabd920ab3423f307dc56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62463457bf1186d96dd7aef48f04c67a = $(`<div id="html_62463457bf1186d96dd7aef48f04c67a" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> HR4<br>         <b>Address:</b> BLK 10 TO 14 HAIG ROAD<br>         <b>Total Lots:</b> 57<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_cdd0c1eedf8dabd920ab3423f307dc56.setContent(html_62463457bf1186d96dd7aef48f04c67a);
+            
+        
+
+        circle_marker_9599ed9b1d362ea31b6a415e2bbff328.bindPopup(popup_cdd0c1eedf8dabd920ab3423f307dc56)
+        ;
+
+        
+    
+    
+            var circle_marker_682bda7b56f60a86dfd08fdf22f9f280 = L.circleMarker(
+                [1.313018646051938, 103.89509932335723],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_144b438968acd000a9e386fb0b21e682 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50234dc7dccbde1a8e5c299c7600a4bc = $(`<div id="html_50234dc7dccbde1a8e5c299c7600a4bc" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> HR5<br>         <b>Address:</b> BLK 21 TO 23 HAIG ROAD<br>         <b>Total Lots:</b> 91<br>         <b>Lots Available:</b> 7<br>         <b>Availability Rate:</b> 7.7%<br>         <b>Parking Pressure:</b> 92.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_144b438968acd000a9e386fb0b21e682.setContent(html_50234dc7dccbde1a8e5c299c7600a4bc);
+            
+        
+
+        circle_marker_682bda7b56f60a86dfd08fdf22f9f280.bindPopup(popup_144b438968acd000a9e386fb0b21e682)
+        ;
+
+        
+    
+    
+            var circle_marker_7b1f79b567517c6408afd3789c31b101 = L.circleMarker(
+                [1.3329691187717014, 103.94049034285005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_a1e705e70143a94cb999ba80a6ff1ebf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5677f8383211adfe61a9958eae8a31f5 = $(`<div id="html_5677f8383211adfe61a9958eae8a31f5" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> B25<br>         <b>Address:</b> BLK 91/97 BEDOK NORTH AVENUE 4<br>         <b>Total Lots:</b> 130<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_a1e705e70143a94cb999ba80a6ff1ebf.setContent(html_5677f8383211adfe61a9958eae8a31f5);
+            
+        
+
+        circle_marker_7b1f79b567517c6408afd3789c31b101.bindPopup(popup_a1e705e70143a94cb999ba80a6ff1ebf)
+        ;
+
+        
+    
+    
+            var circle_marker_957a333995c97bc3f81a76704811ba11 = L.circleMarker(
+                [1.3616776499929377, 103.95277496065557],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8078d757494082be04cafb197b2bded1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb6ab077071308f46b931a07101981de = $(`<div id="html_cb6ab077071308f46b931a07101981de" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> T77<br>         <b>Address:</b> BLK 472/484 TAMPINES STREET 43/44<br>         <b>Total Lots:</b> 24<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8078d757494082be04cafb197b2bded1.setContent(html_cb6ab077071308f46b931a07101981de);
+            
+        
+
+        circle_marker_957a333995c97bc3f81a76704811ba11.bindPopup(popup_8078d757494082be04cafb197b2bded1)
+        ;
+
+        
+    
+    
+            var circle_marker_a24e4f1139a02e31a45e7e2133ba2377 = L.circleMarker(
+                [1.3071728123632311, 103.80054334003177],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_34bf099bd970e2d17c298b9ff1427614 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_485d6dfac4df848f0b8e44ae3c1dcd67 = $(`<div id="html_485d6dfac4df848f0b8e44ae3c1dcd67" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> Q67<br>         <b>Address:</b> BLK 116-118 COMMONWEALTH CRESCENT<br>         <b>Total Lots:</b> 81<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_34bf099bd970e2d17c298b9ff1427614.setContent(html_485d6dfac4df848f0b8e44ae3c1dcd67);
+            
+        
+
+        circle_marker_a24e4f1139a02e31a45e7e2133ba2377.bindPopup(popup_34bf099bd970e2d17c298b9ff1427614)
+        ;
+
+        
+    
+    
+            var circle_marker_c7a966d2988194e9329b3b9765d1f76d = L.circleMarker(
+                [1.3474209171225677, 103.74330320604493],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_2df957eb51358be2c65b926b5968ead4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4593e32976e24903c55e55bb189e27f = $(`<div id="html_e4593e32976e24903c55e55bb189e27f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> U11<br>         <b>Address:</b> BLK 166 BUKIT BATOK WEST AVENUE 8<br>         <b>Total Lots:</b> 60<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_2df957eb51358be2c65b926b5968ead4.setContent(html_e4593e32976e24903c55e55bb189e27f);
+            
+        
+
+        circle_marker_c7a966d2988194e9329b3b9765d1f76d.bindPopup(popup_2df957eb51358be2c65b926b5968ead4)
+        ;
+
+        
+    
+    
+            var circle_marker_d154ccaeaf479aa30ed337cca556b869 = L.circleMarker(
+                [1.4422667144042824, 103.77271145021486],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_6c2bd099dfbdf924cc2e52fb2f511191 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d25116d317d1edb6ae417247ea934825 = $(`<div id="html_d25116d317d1edb6ae417247ea934825" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W11<br>         <b>Address:</b> BLK 22/27 MARSILING DRIVE<br>         <b>Total Lots:</b> 255<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_6c2bd099dfbdf924cc2e52fb2f511191.setContent(html_d25116d317d1edb6ae417247ea934825);
+            
+        
+
+        circle_marker_d154ccaeaf479aa30ed337cca556b869.bindPopup(popup_6c2bd099dfbdf924cc2e52fb2f511191)
+        ;
+
+        
+    
+    
+            var circle_marker_bbbb62e885ed1c8572b3b5a0a901e408 = L.circleMarker(
+                [1.3920194608918222, 103.74403589785445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9bd4ca7207147c96988a01d74838e183 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ab8b94025d5c6bc746bbdc683988d18 = $(`<div id="html_2ab8b94025d5c6bc746bbdc683988d18" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CK65<br>         <b>Address:</b> BLK 535,536 AND 537 CHOA CHU KANG STREET 51<br>         <b>Total Lots:</b> 69<br>         <b>Lots Available:</b> 6<br>         <b>Availability Rate:</b> 8.7%<br>         <b>Parking Pressure:</b> 91.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9bd4ca7207147c96988a01d74838e183.setContent(html_2ab8b94025d5c6bc746bbdc683988d18);
+            
+        
+
+        circle_marker_bbbb62e885ed1c8572b3b5a0a901e408.bindPopup(popup_9bd4ca7207147c96988a01d74838e183)
+        ;
+
+        
+    
+    
+            var circle_marker_7726da066e01bea426a6657594ef70ae = L.circleMarker(
+                [1.4030316355351902, 103.91590261360946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_24b54a9d34cd0d7b64afeb1bbe380178 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7111ee25d3a05aa8c4c1c0a0f55bad85 = $(`<div id="html_7111ee25d3a05aa8c4c1c0a0f55bad85" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> P71L<br>         <b>Address:</b> BLK 684A & 684B EDGEDALE PLAINS<br>         <b>Total Lots:</b> 5<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_24b54a9d34cd0d7b64afeb1bbe380178.setContent(html_7111ee25d3a05aa8c4c1c0a0f55bad85);
+            
+        
+
+        circle_marker_7726da066e01bea426a6657594ef70ae.bindPopup(popup_24b54a9d34cd0d7b64afeb1bbe380178)
+        ;
+
+        
+    
+    
+            var circle_marker_7e475fe867e8105ac801cc90e0b959a8 = L.circleMarker(
+                [1.4350380305719785, 103.77475028200838],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_ec6891b1d106645b41c3919bfc02bda8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36dd0c3f04607a86948165e260f4fb1b = $(`<div id="html_36dd0c3f04607a86948165e260f4fb1b" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> W20<br>         <b>Address:</b> BLK 144-166 WOODLANDS STREET 13<br>         <b>Total Lots:</b> 376<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_ec6891b1d106645b41c3919bfc02bda8.setContent(html_36dd0c3f04607a86948165e260f4fb1b);
+            
+        
+
+        circle_marker_7e475fe867e8105ac801cc90e0b959a8.bindPopup(popup_ec6891b1d106645b41c3919bfc02bda8)
+        ;
+
+        
+    
+    
+            var circle_marker_ca5e0bb863c5199d91ac331139400296 = L.circleMarker(
+                [1.3038767185244577, 103.78263177920336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_476de1e507aa9c378b510098d48e1566 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dab22dde6438224878a5321ffa37627f = $(`<div id="html_dab22dde6438224878a5321ffa37627f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> AR1L<br>         <b>Address:</b> 3 AND 5 DOVER ROAD<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_476de1e507aa9c378b510098d48e1566.setContent(html_dab22dde6438224878a5321ffa37627f);
+            
+        
+
+        circle_marker_ca5e0bb863c5199d91ac331139400296.bindPopup(popup_476de1e507aa9c378b510098d48e1566)
+        ;
+
+        
+    
+    
+            var circle_marker_0a555b9c040834b5bd3e2dae53dfb362 = L.circleMarker(
+                [1.3704946267818319, 103.87568240519704],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_9c11d4bdcfa265e71445ec09f7be71e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c0662e3dd863ba97170c4e8efb95816 = $(`<div id="html_4c0662e3dd863ba97170c4e8efb95816" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> SE43<br>         <b>Address:</b> BLK 510 SERANGOON NORTH AVENUE 4<br>         <b>Total Lots:</b> 27<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_9c11d4bdcfa265e71445ec09f7be71e6.setContent(html_4c0662e3dd863ba97170c4e8efb95816);
+            
+        
+
+        circle_marker_0a555b9c040834b5bd3e2dae53dfb362.bindPopup(popup_9c11d4bdcfa265e71445ec09f7be71e6)
+        ;
+
+        
+    
+    
+            var circle_marker_fea841d74f4725bf156c4ac8a83bf76c = L.circleMarker(
+                [1.3299081271871451, 103.9010898046754],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_75130e21cb2442781a849d1f64745d86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a043ac4d8972c5ffbba9cb88227afe2e = $(`<div id="html_a043ac4d8972c5ffbba9cb88227afe2e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> KU9<br>         <b>Address:</b> BLK 302,304 UBI AVENUE 1<br>         <b>Total Lots:</b> 101<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_75130e21cb2442781a849d1f64745d86.setContent(html_a043ac4d8972c5ffbba9cb88227afe2e);
+            
+        
+
+        circle_marker_fea841d74f4725bf156c4ac8a83bf76c.bindPopup(popup_75130e21cb2442781a849d1f64745d86)
+        ;
+
+        
+    
+    
+            var circle_marker_3cb3f8a298de519ff2e314257c8a2410 = L.circleMarker(
+                [1.351086009942137, 103.9457646070353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_70c34150138597487fde84eb28b16f17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_105dccaa871b8480282e520ae3dbd10f = $(`<div id="html_105dccaa871b8480282e520ae3dbd10f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> T12<br>         <b>Address:</b> BLK 156/160 TAMPINES STREET 12<br>         <b>Total Lots:</b> 20<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_70c34150138597487fde84eb28b16f17.setContent(html_105dccaa871b8480282e520ae3dbd10f);
+            
+        
+
+        circle_marker_3cb3f8a298de519ff2e314257c8a2410.bindPopup(popup_70c34150138597487fde84eb28b16f17)
+        ;
+
+        
+    
+    
+            var circle_marker_ad9b83e2b1056fa4a319c9fb7c56e94f = L.circleMarker(
+                [1.3018210574313147, 103.79820565809362],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_781445820e739fbdcadb496a39e37a04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_223fc390bf8a763db86e35471fa557e1 = $(`<div id="html_223fc390bf8a763db86e35471fa557e1" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> CAM<br>         <b>Address:</b> BLK 88 TANGLIN HALT ROAD<br>         <b>Total Lots:</b> 480<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_781445820e739fbdcadb496a39e37a04.setContent(html_223fc390bf8a763db86e35471fa557e1);
+            
+        
+
+        circle_marker_ad9b83e2b1056fa4a319c9fb7c56e94f.bindPopup(popup_781445820e739fbdcadb496a39e37a04)
+        ;
+
+        
+    
+    
+            var circle_marker_520b565bafe72fc331a9a9f2b7ac2923 = L.circleMarker(
+                [1.2951867450181442, 103.81198973307625],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7a0ecf8d673d6ab8baeda6b677cfa8ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6f6017796a258c08455211f6df3c527 = $(`<div id="html_c6f6017796a258c08455211f6df3c527" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> DWST<br>         <b>Address:</b> BLK 89A DAWSON ROAD<br>         <b>Total Lots:</b> 354<br>         <b>Lots Available:</b> 18<br>         <b>Availability Rate:</b> 5.1%<br>         <b>Parking Pressure:</b> 94.9%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7a0ecf8d673d6ab8baeda6b677cfa8ac.setContent(html_c6f6017796a258c08455211f6df3c527);
+            
+        
+
+        circle_marker_520b565bafe72fc331a9a9f2b7ac2923.bindPopup(popup_7a0ecf8d673d6ab8baeda6b677cfa8ac)
+        ;
+
+        
+    
+    
+            var circle_marker_246545d40426bea200046bbce33c73a8 = L.circleMarker(
+                [1.376353149352738, 103.83997857029854],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_fb917ca95307eb0af88ec1d67e68aaa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_634247e70ac96c20b8346ce467629881 = $(`<div id="html_634247e70ac96c20b8346ce467629881" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> A77<br>         <b>Address:</b> BLK 150/156 ANG MO KIO AVENUE 5<br>         <b>Total Lots:</b> 280<br>         <b>Lots Available:</b> 7<br>         <b>Availability Rate:</b> 2.5%<br>         <b>Parking Pressure:</b> 97.5%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_fb917ca95307eb0af88ec1d67e68aaa0.setContent(html_634247e70ac96c20b8346ce467629881);
+            
+        
+
+        circle_marker_246545d40426bea200046bbce33c73a8.bindPopup(popup_fb917ca95307eb0af88ec1d67e68aaa0)
+        ;
+
+        
+    
+    
+            var circle_marker_c52f4866abe622b326a3fa2153a3b943 = L.circleMarker(
+                [1.3614206825630568, 103.84308446006825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_bdf9cf4e253b8190523f5cfdfce9c131 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eab3e0f5fb17e30df4dbc23e5c52499 = $(`<div id="html_1eab3e0f5fb17e30df4dbc23e5c52499" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE35<br>         <b>Address:</b> BLK 246-256 BISHAN STREET 22<br>         <b>Total Lots:</b> 190<br>         <b>Lots Available:</b> 11<br>         <b>Availability Rate:</b> 5.8%<br>         <b>Parking Pressure:</b> 94.2%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_bdf9cf4e253b8190523f5cfdfce9c131.setContent(html_1eab3e0f5fb17e30df4dbc23e5c52499);
+            
+        
+
+        circle_marker_c52f4866abe622b326a3fa2153a3b943.bindPopup(popup_bdf9cf4e253b8190523f5cfdfce9c131)
+        ;
+
+        
+    
+    
+            var circle_marker_2cd3744fdd55da384395cae3031029eb = L.circleMarker(
+                [1.391575269300993, 103.74337020617482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_0c62e621af3f6c4b33bde10d4fb16af4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3d45c1de5bbb921d2e873253ed7b9d7 = $(`<div id="html_c3d45c1de5bbb921d2e873253ed7b9d7" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PDC5<br>         <b>Address:</b> BLK 533A CHOA CHU KANG ST 51<br>         <b>Total Lots:</b> 185<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_0c62e621af3f6c4b33bde10d4fb16af4.setContent(html_c3d45c1de5bbb921d2e873253ed7b9d7);
+            
+        
+
+        circle_marker_2cd3744fdd55da384395cae3031029eb.bindPopup(popup_0c62e621af3f6c4b33bde10d4fb16af4)
+        ;
+
+        
+    
+    
+            var circle_marker_ed9494ad1b49060862febd0a3fdb95de = L.circleMarker(
+                [1.445462284938923, 103.79806059149975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_8bc695dc31d4ae4ceba9b2a89083c5a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10a9eb1d359118880632a1c1523241f1 = $(`<div id="html_10a9eb1d359118880632a1c1523241f1" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> PDW7<br>         <b>Address:</b> BLK 768 WOODLANDS AVE 6<br>         <b>Total Lots:</b> 171<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 1.2%<br>         <b>Parking Pressure:</b> 98.8%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_8bc695dc31d4ae4ceba9b2a89083c5a9.setContent(html_10a9eb1d359118880632a1c1523241f1);
+            
+        
+
+        circle_marker_ed9494ad1b49060862febd0a3fdb95de.bindPopup(popup_8bc695dc31d4ae4ceba9b2a89083c5a9)
+        ;
+
+        
+    
+    
+            var circle_marker_08bf097794f99f8b52538b259410fcd8 = L.circleMarker(
+                [1.424555593889528, 103.84752151693623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_046ff93bc8ec82ec12b0f0d0ca3cfd94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_157137de5bec07628d6f6c9492154e38 = $(`<div id="html_157137de5bec07628d6f6c9492154e38" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> Y49H<br>         <b>Address:</b> BLK 419A YISHUN AVENUE 11<br>         <b>Total Lots:</b> 27<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 3.7%<br>         <b>Parking Pressure:</b> 96.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_046ff93bc8ec82ec12b0f0d0ca3cfd94.setContent(html_157137de5bec07628d6f6c9492154e38);
+            
+        
+
+        circle_marker_08bf097794f99f8b52538b259410fcd8.bindPopup(popup_046ff93bc8ec82ec12b0f0d0ca3cfd94)
+        ;
+
+        
+    
+    
+            var circle_marker_8260f881d2e38048d74b614beb5d2e98 = L.circleMarker(
+                [1.3980382156927311, 103.8768218934538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_048440006e28b63cd096cd18d41ae7c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94c678acbc324eb14f497d3225dc3b47 = $(`<div id="html_94c678acbc324eb14f497d3225dc3b47" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> S16L<br>         <b>Address:</b> BLK 464A-B, 465B, 466A-B FERNVALE ROAD<br>         <b>Total Lots:</b> 6<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_048440006e28b63cd096cd18d41ae7c2.setContent(html_94c678acbc324eb14f497d3225dc3b47);
+            
+        
+
+        circle_marker_8260f881d2e38048d74b614beb5d2e98.bindPopup(popup_048440006e28b63cd096cd18d41ae7c2)
+        ;
+
+        
+    
+    
+            var circle_marker_4f1d1759b5ea57f673752051a6b0efcc = L.circleMarker(
+                [1.419339313044051, 103.91190496880934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7f74aa419b7293b23790ca67256a9c54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_059bc7f89215f5760f8644005937c53e = $(`<div id="html_059bc7f89215f5760f8644005937c53e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> P89L<br>         <b>Address:</b> BLK 437A NORTHSHORE DRIVE<br>         <b>Total Lots:</b> 7<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7f74aa419b7293b23790ca67256a9c54.setContent(html_059bc7f89215f5760f8644005937c53e);
+            
+        
+
+        circle_marker_4f1d1759b5ea57f673752051a6b0efcc.bindPopup(popup_7f74aa419b7293b23790ca67256a9c54)
+        ;
+
+        
+    
+    
+            var circle_marker_dc42a843a2716c66ca57203e73fac97e = L.circleMarker(
+                [1.341157056555126, 103.71017592127583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_add2cc6c6e578f6f71db51567063ade0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2092a50d879059b8fd050b4f9ebea89f = $(`<div id="html_2092a50d879059b8fd050b4f9ebea89f" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BL24<br>         <b>Address:</b> BLK 237 BOON LAY DRIVE<br>         <b>Total Lots:</b> 200<br>         <b>Lots Available:</b> 1<br>         <b>Availability Rate:</b> 0.5%<br>         <b>Parking Pressure:</b> 99.5%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_add2cc6c6e578f6f71db51567063ade0.setContent(html_2092a50d879059b8fd050b4f9ebea89f);
+            
+        
+
+        circle_marker_dc42a843a2716c66ca57203e73fac97e.bindPopup(popup_add2cc6c6e578f6f71db51567063ade0)
+        ;
+
+        
+    
+    
+            var circle_marker_2f61514e7f074558fe69b0486b2c1012 = L.circleMarker(
+                [1.3252580063895947, 103.8888355207814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_7f5d8dc568283c020497635801a35888 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96bcc87955aa63bc8d0377b0b86820fc = $(`<div id="html_96bcc87955aa63bc8d0377b0b86820fc" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> MM7L<br>         <b>Address:</b> BLK 76A CIRCUIT ROAD<br>         <b>Total Lots:</b> 2<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_7f5d8dc568283c020497635801a35888.setContent(html_96bcc87955aa63bc8d0377b0b86820fc);
+            
+        
+
+        circle_marker_2f61514e7f074558fe69b0486b2c1012.bindPopup(popup_7f5d8dc568283c020497635801a35888)
+        ;
+
+        
+    
+    
+            var circle_marker_28f9fd046a3efff6ce3b09865c0b077a = L.circleMarker(
+                [1.349436593646741, 103.84965495311533],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_5e625fd2a44df185eb33d812fffc6048 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36252482b202b6b3e3b79dc34cef6dbb = $(`<div id="html_36252482b202b6b3e3b79dc34cef6dbb" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BE22<br>         <b>Address:</b> BLK 511/513 BISHAN STREET 13<br>         <b>Total Lots:</b> 8<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_5e625fd2a44df185eb33d812fffc6048.setContent(html_36252482b202b6b3e3b79dc34cef6dbb);
+            
+        
+
+        circle_marker_28f9fd046a3efff6ce3b09865c0b077a.bindPopup(popup_5e625fd2a44df185eb33d812fffc6048)
+        ;
+
+        
+    
+    
+            var circle_marker_4139c62d82b49998a7e11a3ec93fe7ed = L.circleMarker(
+                [1.3700210113414353, 103.83469194577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_5ffb41c4d68e5e70fcaca4d24d273ad0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47b02b3941423c7f3e5ac094c17eaa05 = $(`<div id="html_47b02b3941423c7f3e5ac094c17eaa05" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> A33<br>         <b>Address:</b> BLK 253/254 ANG MO KIO STREET 21<br>         <b>Total Lots:</b> 3<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_5ffb41c4d68e5e70fcaca4d24d273ad0.setContent(html_47b02b3941423c7f3e5ac094c17eaa05);
+            
+        
+
+        circle_marker_4139c62d82b49998a7e11a3ec93fe7ed.bindPopup(popup_5ffb41c4d68e5e70fcaca4d24d273ad0)
+        ;
+
+        
+    
+    
+            var circle_marker_e3b890f7d0412f3789bf9b4cb10f524e = L.circleMarker(
+                [1.3392242584705427, 103.69699793968184],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_bbe9b812dde4361d5349838ecf0f7ccb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cce51ad571d6bd85208027a46cc34845 = $(`<div id="html_cce51ad571d6bd85208027a46cc34845" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> JS5L<br>         <b>Address:</b> BLK 647A JURONG WEST STREET 61<br>         <b>Total Lots:</b> 30<br>         <b>Lots Available:</b> 2<br>         <b>Availability Rate:</b> 6.7%<br>         <b>Parking Pressure:</b> 93.3%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_bbe9b812dde4361d5349838ecf0f7ccb.setContent(html_cce51ad571d6bd85208027a46cc34845);
+            
+        
+
+        circle_marker_e3b890f7d0412f3789bf9b4cb10f524e.bindPopup(popup_bbe9b812dde4361d5349838ecf0f7ccb)
+        ;
+
+        
+    
+    
+            var circle_marker_c74151511ff9512941ab8dc0edb3df93 = L.circleMarker(
+                [1.3739074487299365, 103.87175191509498],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_6b4a2c5fff478f8c20272587bb5ee26f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22adc7c9a97e504e025488da501b7919 = $(`<div id="html_22adc7c9a97e504e025488da501b7919" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> S39L<br>         <b>Address:</b> BLK 542A/542 SERANGOON NORTH AVENUE 4<br>         <b>Total Lots:</b> 3<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_6b4a2c5fff478f8c20272587bb5ee26f.setContent(html_22adc7c9a97e504e025488da501b7919);
+            
+        
+
+        circle_marker_c74151511ff9512941ab8dc0edb3df93.bindPopup(popup_6b4a2c5fff478f8c20272587bb5ee26f)
+        ;
+
+        
+    
+    
+            var circle_marker_6e92a83db84216b50fa52d5d949bea30 = L.circleMarker(
+                [1.2960658046069984, 103.81197186986195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_0ab15a8b0b3f39ecb91b399ed5cc6ed9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0735a0ae8987f355cdb1f3401126fc0 = $(`<div id="html_f0735a0ae8987f355cdb1f3401126fc0" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> DWSP<br>         <b>Address:</b> BLK 95A DAWSON ROAD<br>         <b>Total Lots:</b> 604<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_0ab15a8b0b3f39ecb91b399ed5cc6ed9.setContent(html_f0735a0ae8987f355cdb1f3401126fc0);
+            
+        
+
+        circle_marker_6e92a83db84216b50fa52d5d949bea30.bindPopup(popup_0ab15a8b0b3f39ecb91b399ed5cc6ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_7bcfabae9368043e352eb25c651b0d94 = L.circleMarker(
+                [1.3839745646274242, 103.76388026052355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_15dde9273d56fcf20e2b1696129cf6d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e74bfd1b1472d747cfd865bcb8430b2 = $(`<div id="html_6e74bfd1b1472d747cfd865bcb8430b2" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> BJBL<br>         <b>Address:</b> BLK 533 - 534 BUKIT PANJANG RING ROAD<br>         <b>Total Lots:</b> 13<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_15dde9273d56fcf20e2b1696129cf6d4.setContent(html_6e74bfd1b1472d747cfd865bcb8430b2);
+            
+        
+
+        circle_marker_7bcfabae9368043e352eb25c651b0d94.bindPopup(popup_15dde9273d56fcf20e2b1696129cf6d4)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0803907a304ea6fa623430296218a7 = L.circleMarker(
+                [1.3410713661758147, 103.70592229404798],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_06454239061eb5c3c5f24ee9d5dfcfc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c08f8d898797e429217a895c3a3f9292 = $(`<div id="html_c08f8d898797e429217a895c3a3f9292" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> JS1L<br>         <b>Address:</b> BLK 692A JURONG WEST CENTRAL 3<br>         <b>Total Lots:</b> 10<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_06454239061eb5c3c5f24ee9d5dfcfc2.setContent(html_c08f8d898797e429217a895c3a3f9292);
+            
+        
+
+        circle_marker_6a0803907a304ea6fa623430296218a7.bindPopup(popup_06454239061eb5c3c5f24ee9d5dfcfc2)
+        ;
+
+        
+    
+    
+            var circle_marker_6ec4be0ae130f7e0aa806ca544249ab3 = L.circleMarker(
+                [1.3182340844394125, 103.9476194524166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_f706b8580bcee4d138b724f6c7246385 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_242c093e6672b5656fdea21b193c758e = $(`<div id="html_242c093e6672b5656fdea21b193c758e" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> B65L<br>         <b>Address:</b> BLK 152A BEDOK SOUTH ROAD<br>         <b>Total Lots:</b> 4<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_f706b8580bcee4d138b724f6c7246385.setContent(html_242c093e6672b5656fdea21b193c758e);
+            
+        
+
+        circle_marker_6ec4be0ae130f7e0aa806ca544249ab3.bindPopup(popup_f706b8580bcee4d138b724f6c7246385)
+        ;
+
+        
+    
+    
+            var circle_marker_804bd6eb94566193f184bdc4c1c3c074 = L.circleMarker(
+                [1.3850735040392623, 103.8801281920768],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_63ee8a8915fee013b1923735c943f56e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dac96d2763d444b0c46d2074fde5f4ea = $(`<div id="html_dac96d2763d444b0c46d2074fde5f4ea" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> H3DL<br>         <b>Address:</b> BLK 998A TO 998B,999A TO 999B BUANGKOK CRESCENT<br>         <b>Total Lots:</b> 2<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_63ee8a8915fee013b1923735c943f56e.setContent(html_dac96d2763d444b0c46d2074fde5f4ea);
+            
+        
+
+        circle_marker_804bd6eb94566193f184bdc4c1c3c074.bindPopup(popup_63ee8a8915fee013b1923735c943f56e)
+        ;
+
+        
+    
+    
+            var circle_marker_54b4c21810ce7885b877fcf377596de5 = L.circleMarker(
+                [1.4419551329561693, 103.8225504618667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_ea2fefdd251e6a896ec4d1abced13ad8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_240f2bd21d9bf7e945d2a4b3595ea998 = $(`<div id="html_240f2bd21d9bf7e945d2a4b3595ea998" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> S50L<br>         <b>Address:</b> BLK 373A SEMBAWANG AVENUE<br>         <b>Total Lots:</b> 15<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_ea2fefdd251e6a896ec4d1abced13ad8.setContent(html_240f2bd21d9bf7e945d2a4b3595ea998);
+            
+        
+
+        circle_marker_54b4c21810ce7885b877fcf377596de5.bindPopup(popup_ea2fefdd251e6a896ec4d1abced13ad8)
+        ;
+
+        
+    
+    
+            var circle_marker_209a586deec000d95c37ea9a5632dd66 = L.circleMarker(
+                [1.4277055618254235, 103.78998362192527],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_d9a6106693ebf6d4e1a40e4bb9f45bc3);
+        
+    
+        var popup_34716e80f63b19132dbfcb3736b3cd7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1a212982b172afad20202395da8d7f7 = $(`<div id="html_b1a212982b172afad20202395da8d7f7" style="width: 100.0%; height: 100.0%;">         <b>Carpark:</b> WCGL<br>         <b>Address:</b> BLK 568A TO 568C CHAMPIONS WAY<br>         <b>Total Lots:</b> 7<br>         <b>Lots Available:</b> 0<br>         <b>Availability Rate:</b> 0.0%<br>         <b>Parking Pressure:</b> 100.0%<br>         <b>Risk:</b> High Risk<br>         <b>Retrieved:</b> 2026-05-29 21:43         </div>`)[0];
+                popup_34716e80f63b19132dbfcb3736b3cd7a.setContent(html_b1a212982b172afad20202395da8d7f7);
+            
+        
+
+        circle_marker_209a586deec000d95c37ea9a5632dd66.bindPopup(popup_34716e80f63b19132dbfcb3736b3cd7a)
+        ;
+
+        
+    
+</script>
+</html>
